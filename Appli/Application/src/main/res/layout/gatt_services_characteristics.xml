@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_device_address"
+            android:textSize="18sp"/>
+        <Space android:layout_width="5dp"
+            android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/device_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_state"
+            android:textSize="18sp"/>
+        <Space android:layout_width="5dp"
+            android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/connection_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disconnected"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_data"
+            android:textSize="18sp"/>
+        <Space android:layout_width="5dp"
+            android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/data_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="581dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        tools:context=".MainActivity">
+
+
+
+        <TextView
+            android:id="@+id/sqTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_signal" />
+
+        <TextView
+            android:id="@+id/sqText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sqTitle"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@+id/sqTitle"
+            android:text="--" />
+
+        <TextView
+            android:id="@+id/stateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/sqTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_state" />
+
+        <TextView
+            android:id="@+id/stateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/stateTitle"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@+id/stateTitle"
+            android:text="--" />
+
+        <TextView
+            android:id="@+id/attTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/stateTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_attention" />
+
+        <TextView
+            android:id="@+id/attText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/attTitle"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@+id/attTitle"
+            android:text="--" />
+
+        <TextView
+            android:id="@+id/medTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/attTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_mediation" />
+
+        <TextView
+            android:id="@+id/medText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/medTitle"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@+id/medTitle"
+            android:text="--" />
+
+        <TextView
+            android:id="@+id/blinkTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/medTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/label_blink" />
+
+        <ImageView
+            android:id="@+id/blinkImage"
+            android:layout_width="49dp"
+            android:layout_height="38dp"
+            android:layout_alignBottom="@+id/blinkTitle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="-8dp"
+            android:layout_toRightOf="@+id/blinkTitle"
+            android:maxWidth="10dp"
+            android:maxHeight="20dp"
+            android:minWidth="10dp"
+            android:minHeight="20dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/led_off" />
+
+        <Button
+            android:id="@+id/headsetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:maxHeight="20dp"
+            android:minHeight="20dp"
+            android:text="@string/label_headset"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/headsetButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:maxHeight="20dp"
+            android:minHeight="20dp"
+            android:text="@string/label_started"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/startButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:maxHeight="20dp"
+            android:minHeight="20dp"
+            android:text="@string/label_stop"
+            android:textSize="12dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="334dp"
+            android:layout_marginEnd="58dp"
+            android:rotation="270" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="251dp"
+            android:layout_height="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="326dp"
+            android:layout_marginEnd="9dp"
+            android:rotation="270" />
+
+    </RelativeLayout>
+</LinearLayout>
