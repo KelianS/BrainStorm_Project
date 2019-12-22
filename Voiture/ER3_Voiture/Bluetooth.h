@@ -6,10 +6,12 @@
 class Bluetooth
 {
 private : 
-	bool bHasAnswer;
-	unsigned long ulLastReceived = 0;
+
 
 public :
+
+	bool bHasAnswer;
+	unsigned long ulLastReceived = 0;
 
 	Bluetooth();
 

@@ -12,24 +12,41 @@ Bluetooth mBluetooth;
 char cParam;
 byte byValue1, byValue2;
 
+typedef enum{FALLBACK,RUNNING}TState;
+
+TState State, State_old;
+
 void setup() {
     
     //Debug
     Serial.begin(DEBUG_SPEED);
     Serial.println("READY");
-
+	State = FALLBACK;
+	State_old = RUNNING;
+	delay(25);
 }
 
 void loop() {
-	static bool b = false;
-	if (mBluetooth.Alive()) {
-		if (b == true) {
-			Serial.println("Connected");
-			b = false;
-		}
-		
-		if (mBluetooth.Receive(cParam, byValue1, byValue2)) {//return 1 if comms is finished
+	//Input Refresh
+	bool bReceived = mBluetooth.Receive(cParam, byValue1, byValue2);
+	bool bRepli = mBluetooth.Alive();
 
+
+	//State+Output Update
+	switch (State) {
+	case FALLBACK : 
+		if (bRepli) {
+			State = RUNNING;
+			Serial.println("RUN");
+		}
+		break;
+
+	case RUNNING:
+		if (bRepli==0) {
+			State = FALLBACK;
+			Serial.println("BACK");
+		}
+		if (bReceived) {
 			switch (cParam) {
 			case 'A': //Both Motors -> Forward
 				mMoteur.Right(FORWARD, byValue1);
@@ -49,14 +66,18 @@ void loop() {
 				break;
 			}
 		}
-	}
-	else {
-		if (b == false) {
-			Serial.println("Disconnected");
-			b = true;
+		break;
+	}	
+	if (State != State_old) {
+		State_old = State;
+		switch (State)
+		{
+		case FALLBACK:
+			mMoteur.Right(FORWARD, 0);
+			mMoteur.Left(FORWARD, 0);
+			break;
 		}
-		mMoteur.Right(FORWARD, 0);
-		mMoteur.Left(FORWARD,0);
 	}
+
 }
 

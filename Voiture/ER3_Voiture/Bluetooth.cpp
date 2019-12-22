@@ -12,26 +12,20 @@ bool Bluetooth::Receive(char& cParam, byte& byVal1, byte& byVal2) {
 
 	if(Serial1.available() > 0)
 	{
-			String stValue = Serial1.readStringUntil(' '); //End comms with a space
+		ulLastReceived = millis();
+		bHasAnswer = true;
 
-			if (stValue.compareTo("Z")==0) { //If we received 'Z ' -> It's the Alive bit
-				bHasAnswer = true;
-				ulLastReceived = millis();
-				//Debug
-				Serial.println("<-->");
+		String stValue = "        ";
+		stValue = Serial1.readStringUntil(' '); //End comms with a space
+		cParam = stValue.substring(0, 1).charAt(0);
+		byVal1 = stValue.substring(1, 4).toInt();
+		byVal2 = stValue.substring(4).toInt();
 
-			}
-			else {
-				cParam = stValue.substring(0, 1).charAt(0);
-				byVal1 = stValue.substring(1, 4).toInt();
-				byVal2 = stValue.substring(4).toInt();
+		//Debug 
+		//Serial.println("> " + stValue);
+		//Serial.print(cParam); Serial.print("-");  Serial.print(byVal1); Serial.print("-"); Serial.println(byVal2);
 
-				//Debug 
-				Serial.println("> " + stValue);
-				Serial.print(cParam); Serial.print("-");  Serial.print(byVal1); Serial.print("-"); Serial.println(byVal2);
-
-				bRet = true;
-			}
+		bRet = true;
 	}
 
 	return bRet;
@@ -41,18 +35,21 @@ bool Bluetooth::Receive(char& cParam, byte& byVal1, byte& byVal2) {
 
 bool Bluetooth::Alive(void) {
 	/*********************************************************************************
-	Send a 'Y' every 100ms, return true if the phone answer with a "Z " in the next 20ms.
+	Send a 'Y' every $100ms, return true if the phone answer with a "Z " in the next 20ms.
 	**********************************************************************************/
 	bool bRetAlive = true;
 	static unsigned long ulTimeOld = millis();
 
 	//Send 'Y'
-	if (millis() > (ulTimeOld + ANSWER_TIME)) {
+	if ((millis()-ulTimeOld) > ANSWER_TIME) {
 		Serial1.print('A');
-		Serial.println("__");
+		//Serial.println("__");//debug
 		ulTimeOld = millis();
 	}
-	if (millis() > ulLastReceived + (ANSWER_TIME*(3./2))) {//Not connected
+
+	//If last reception occurs at more than 'ANSWER_TIME' = disconnected
+	if ((millis()-ulLastReceived) > (ANSWER_TIME*2)) {
+		//Serial.println(millis() - (ulLastReceived));
 		bHasAnswer = false;
 	}
 
