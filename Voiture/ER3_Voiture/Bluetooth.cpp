@@ -22,10 +22,11 @@ bool Bluetooth::Receive(char& cParam, byte& byVal1, byte& byVal2) {
 		byVal2 = stValue.substring(4).toInt();
 
 		//Debug 
-		//Serial.println("> " + stValue);
+		Serial.println("> " + stValue);
 		//Serial.print(cParam); Serial.print("-");  Serial.print(byVal1); Serial.print("-"); Serial.println(byVal2);
-
-		bRet = true;
+		if (cParam != 'Z') {
+			bRet = true;
+		}
 	}
 
 	return bRet;

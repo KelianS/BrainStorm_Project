@@ -1,7 +1,7 @@
 #pragma once
 
 #define BT_SPEED 57600
-#define ANSWER_TIME 100
+#define ANSWER_TIME 150
 
 class Bluetooth
 {
