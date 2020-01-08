@@ -1,4 +1,0 @@
-#Sat Dec 21 18:14:13 CET 2019
-base.0=C\:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\Headset-Mindwave\\android-BluetoothLeGatt-blended-V05-20191221T170159Z-001\\android-BluetoothLeGatt-blended-V05\\Application\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
-path.0=classes.dex
-renamed.0=classes.dex
