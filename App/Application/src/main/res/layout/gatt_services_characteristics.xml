@@ -253,6 +253,17 @@
             android:progress="255"
             android:rotation="-90" />
 
+        <Button
+            android:id="@+id/DataBase_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="26dp"
+            android:onClick="onClick_DataBase"
+            android:text="DataB" />
+
 
     </RelativeLayout>
 </LinearLayout>

@@ -15,6 +15,7 @@
  */
 
 package com.example.android.headsetBLE;
+import android.bluetooth.BluetoothClass;
 import android.os.Looper;
 import android.view.View;
 import android.os.Message;
@@ -78,8 +79,10 @@ public class DeviceControlActivity extends Activity {
 
     public static final String EXTRAS_DEVICE_NAME = "DEVICE_NAME";
     public static final String EXTRAS_DEVICE_ADDRESS = "DEVICE_ADDRESS";
+    private DatabaseManager m_DatabaseManager;
 
-
+    public int iOldvalueR = 0;
+    public int iOldvalueL = 0;
     private TextView mConnectionState;
     private TextView mDataField;
     private String mDeviceAddress;
@@ -211,6 +214,12 @@ public class DeviceControlActivity extends Activity {
     //
 
 
+    public void onClick_DataBase(View view){
+        Intent myIntentDataBase = new Intent(DeviceControlActivity.this,Data.class);
+        startActivity(myIntentDataBase);
+    }
+
+
 
 
     public SeekBar seekG;
@@ -222,6 +231,7 @@ public class DeviceControlActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         String mDeviceName;
+        m_DatabaseManager = new DatabaseManager(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gatt_services_characteristics);
 
@@ -643,10 +653,19 @@ public class DeviceControlActivity extends Activity {
                             cMovementFinale = 'B';
                         }
                         break;
+
                 }
 
 
-                if (bluetoothGattCharacteristicHM_10 != null) {
+
+
+                if (bluetoothGattCharacteristicHM_10 != null)
+                {if((iOldvalueR != iValueR) || (iOldvalueL != iValueL)) {
+                    String sVal = "R : "+ Integer.toString( iValueR)+"  L : "+Integer.toString( iValueL);
+                    m_DatabaseManager.insertScore(sVal);
+                    iOldvalueR = iValueR;
+                    iOldvalueL = iValueL;
+                }
                     bluetoothGattCharacteristicHM_10.setValue(cMovementFinale + sBarR + sBarL + " ");
                     mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
                     mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, true);

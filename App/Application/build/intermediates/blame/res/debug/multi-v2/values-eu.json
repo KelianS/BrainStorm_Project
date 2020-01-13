@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\BrainStorm_Project\\Application android\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-eu\\values-eu.xml",
+            "outputFile": "D:\\DOCU\\GitHub\\BrainStorm_Project\\App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-eu\\values-eu.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kelia\\.gradle\\caches\\transforms-2\\files-2.1\\c01c1429618c182582aba4d2f4546028\\res\\values-eu\\values-eu.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,312,422,508,614,738,825,909,991,1100,1210,1309,1418,1524,1635,1806,1905",
-                        "endColumns": "108,97,109,85,105,123,86,83,81,108,109,98,108,105,110,170,98,81",
-                        "endOffsets": "209,307,417,503,609,733,820,904,986,1095,1205,1304,1413,1519,1630,1801,1900,1982"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\kelia\\.gradle\\caches\\transforms-2\\files-2.1\\6cfc2473b2437261b13fd1491458e33c\\res\\values-eu\\values-eu.xml",
+                    "source": "C:\\Users\\gaspa\\.gradle\\caches\\transforms-2\\files-2.1\\3c05595a4d841e8755054fd17d7370ae\\res\\values-eu\\values-eu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -28,6 +18,16 @@
                         "startOffsets": "1987",
                         "endColumns": "100",
                         "endOffsets": "2083"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\gaspa\\.gradle\\caches\\transforms-2\\files-2.1\\81131911294f738af9e3f794d3f8375d\\res\\values-eu\\values-eu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,214,312,422,508,614,738,825,909,991,1100,1210,1309,1418,1524,1635,1806,1905",
+                        "endColumns": "108,97,109,85,105,123,86,83,81,108,109,98,108,105,110,170,98,81",
+                        "endOffsets": "209,307,417,503,609,733,820,904,986,1095,1205,1304,1413,1519,1630,1801,1900,1982"
                     }
                 }
             ]
