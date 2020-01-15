@@ -11,9 +11,6 @@ import java.util.List;
 public class Data extends Activity {
     public TextView textView;
     DatabaseManager m_DataBaseManager;
-    public Data(){
-              //Empty constructor
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,9 +19,7 @@ public class Data extends Activity {
         textView = (TextView) findViewById(R.id.dataBase_value);
         m_DataBaseManager = new DatabaseManager(this);
         List<RobotData> action = m_DataBaseManager.readTop100();
-        for ( RobotData actionRobot : action ) {
-            textView.append( action.toString() + "\n" );
-        }
+        textView.append(action.toString());
         m_DataBaseManager.close();
 
     }
