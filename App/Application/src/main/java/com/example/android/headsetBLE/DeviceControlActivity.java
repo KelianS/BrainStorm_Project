@@ -214,9 +214,10 @@ public class DeviceControlActivity extends Activity {
     //
 
 
-    public void onClick_DataBase(View view){
+    public void onClickDataBaseButton(View view){
         Intent myIntentDataBase = new Intent(DeviceControlActivity.this,Data.class);
         startActivity(myIntentDataBase);
+        Log.d("!!!!!!!!!!!!!!!!","RUN");
     }
 
 

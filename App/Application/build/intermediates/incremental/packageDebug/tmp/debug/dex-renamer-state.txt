@@ -1,4 +1,4 @@
-#Mon Jan 13 10:48:34 CET 2020
+#Wed Jan 15 09:37:09 CET 2020
 base.0=D\:\\DOCU\\GitHub\\BrainStorm_Project\\App\\Application\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 path.0=classes.dex
 renamed.0=classes.dex

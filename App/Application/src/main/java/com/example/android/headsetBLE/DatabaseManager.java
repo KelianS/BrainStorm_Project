@@ -56,7 +56,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
             action.add( actionRobot );
             cursor.moveToNext();
         }
-        // 2nd technique "plus objet"
+         //2nd technique "plus objet"
 //        Cursor cursor = this.getReadableDatabase().query( "T_Scores",
 //                new String[] { "idScore", "name", "score", "when_" },
 //                null, null, null, null, "score desc", "10" );
@@ -67,7 +67,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
 //            scores.add( score );
 //            cursor.moveToNext();
 //        }
-        cursor.close();
+//        cursor.close();
 
         return action;
     }
