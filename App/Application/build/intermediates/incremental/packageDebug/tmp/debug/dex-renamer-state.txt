@@ -1,4 +1,4 @@
-#Wed Jan 08 15:26:26 CET 2020
-base.0=C\:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\BrainStorm_Project\\Application android\\Application\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+#Wed Jan 15 10:47:50 CET 2020
+base.0=D\:\\DOCU\\GitHub\\BrainStorm_Project\\App\\Application\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 path.0=classes.dex
 renamed.0=classes.dex

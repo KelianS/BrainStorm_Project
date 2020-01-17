@@ -15,8 +15,13 @@
  */
 
 package com.example.android.headsetBLE;
+import android.bluetooth.BluetoothClass;
 import android.os.Looper;
 import android.view.View;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import android.os.Message;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
@@ -58,8 +63,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.UUID;
@@ -72,16 +79,16 @@ import java.util.UUID;
  * Bluetooth LE API.
  */
 public class DeviceControlActivity extends Activity {
-
-
     private final static String TAG = "BTLE";
 
     public static final String EXTRAS_DEVICE_NAME = "DEVICE_NAME";
     public static final String EXTRAS_DEVICE_ADDRESS = "DEVICE_ADDRESS";
+    private DatabaseManager m_DatabaseManager;
 
 
     private TextView mConnectionState;
     private TextView mDataField;
+
     private String mDeviceAddress;
     public BluetoothLeService mBluetoothLeService;
     private ArrayList<ArrayList<BluetoothGattCharacteristic>> mGattCharacteristics =
@@ -164,7 +171,8 @@ public class DeviceControlActivity extends Activity {
                 updateConnectionState(R.string.connected);
                 invalidateOptionsMenu();
                 Begin();
-
+                final Button m_DataBase_show = findViewById(R.id.DataBase_show);
+                m_DataBase_show.setEnabled(true);
             } else if (BluetoothLeService.ACTION_GATT_DISCONNECTED.equals(action)) {
                 mConnected = false;
                 updateConnectionState(R.string.disconnected);
@@ -211,6 +219,13 @@ public class DeviceControlActivity extends Activity {
     //
 
 
+    public void onClickDataBaseButton(View view){
+        Intent myIntentDataBase = new Intent(DeviceControlActivity.this,Data.class);
+        startActivity(myIntentDataBase);
+        Log.d("!!!!!!!!!!!!!!!!","RUN");
+    }
+
+
 
 
     public SeekBar seekG;
@@ -221,10 +236,13 @@ public class DeviceControlActivity extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        String mDeviceName;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gatt_services_characteristics);
-
+        String mDeviceName;
+        final Button m_DataBase_show = findViewById(R.id.DataBase_show);
+        m_DataBase_show.setEnabled(false);
+        m_DatabaseManager = new DatabaseManager(this);
         seekG = this.findViewById(R.id.SeekBarL);
         seekD = this.findViewById(R.id.SeekBarR);
 
@@ -545,7 +563,8 @@ public class DeviceControlActivity extends Activity {
         bstart = false;
     }
 
-
+    int iOldvalueR = 0;
+    int iOldvalueL = 0;
 
     int iValueL;
     int iValueR;
@@ -643,10 +662,20 @@ public class DeviceControlActivity extends Activity {
                             cMovementFinale = 'B';
                         }
                         break;
+
                 }
 
 
-                if (bluetoothGattCharacteristicHM_10 != null) {
+
+                DateFormat df = new SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z");
+                String date = df.format(Calendar.getInstance().getTime());
+                if (bluetoothGattCharacteristicHM_10 != null)
+                {if((iOldvalueR != iValueR) || (iOldvalueL != iValueL)) {
+                    String sVal = "R : "+ Integer.toString( iValueR)+"  L : "+Integer.toString( iValueL )+"\n"+ date + "\n\n";
+                    m_DatabaseManager.insertScore(sVal);
+                    iOldvalueR = iValueR;
+                    iOldvalueL = iValueL;
+                }
                     bluetoothGattCharacteristicHM_10.setValue(cMovementFinale + sBarR + sBarL + " ");
                     mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
                     mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, true);
