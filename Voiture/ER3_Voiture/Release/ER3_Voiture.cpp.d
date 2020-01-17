@@ -16,4 +16,5 @@ C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Release\ER3_Voit
  C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Release\Algorithm.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
  C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Release\Moteur.h \
- C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Release\Bluetooth.h
+ C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Release\Bluetooth.h \
+ C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Release\Sensor.h

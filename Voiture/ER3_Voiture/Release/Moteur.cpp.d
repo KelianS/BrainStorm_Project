@@ -15,4 +15,5 @@ C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Release\Moteur.c
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\leonardo/pins_arduino.h \
  C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Release\Moteur.h \
  C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Release\Algorithm.h \
- C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Release\Bluetooth.h
+ C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Release\Bluetooth.h \
+ C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Release\Sensor.h

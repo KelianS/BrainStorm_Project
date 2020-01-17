@@ -1,9 +1,32 @@
+/****************************
+Author : Kelian SERMET
+Last Modif : 17/01/2020
+
+Bluetooth frame:
+<char Param><char val1.1><char val1.2><char val1.1><char val1.3><char val2.1><char val2.2><char val2.3><" ">
+Ex : 'A255255 ' 
+
+Param definition :
+'A' => Val1 = Motor1 Value / Val2 = Motor2 Value //FORWARD
+'B' => Val1 = Motor1 Value / Val2 = Motor2 Value //REVERSE
+'C' => Val1 = Motor1 Value FORWARD / Val2 = Motor2 Value REVERSE
+'D' => Val1 = Motor1 Value REVERSE / Val2 = Motor2 Value FORWARD
+'E' => ZEN MODE : 'E255255 '=activation  | 'E000000 '=desactivation
+'F' => SENSOR debug : - <F><bool Sensor1><Sensor2><Sensor3><Sensor4><Sensor5><Sensor6><' '>		
+					  - Sensor definition : '1' = IR_LEFT
+											'2' = IR_MID
+											'3' = IR_RIGHT
+					  - EX : 'F111000 ' := SENSOR LEFT/MID/RIGHT Activated
+'Y' => Alive bit sended from the car to know if the app is always connected. ex: 'Y ' (no data sent here)
+*****************************/
+
 #include <Arduino.h>
 #include "Bluetooth.h"
 
 
 Bluetooth::Bluetooth() {
 	Serial1.begin(BT_SPEED);
+	stBuffer = "";
 }
 
 
@@ -36,15 +59,20 @@ bool Bluetooth::Receive(char& cParam, byte& byVal1, byte& byVal2) {
 
 bool Bluetooth::Alive(void) {
 	/*********************************************************************************
-	Send a 'Y' every $100ms, return true if the phone answer with a "Z " in the next 20ms.
+	Send a 'Y' every $ANSWER_TIME (in millisecond), return true if the phone answer with a "Z " in the next $ANSWER_TIME.
 	**********************************************************************************/
 	bool bRetAlive = true;
 	static unsigned long ulTimeOld = millis();
 
 	//Send 'Y'
 	if ((millis()-ulTimeOld) > ANSWER_TIME) {
-		Serial1.print('A');
-		//Serial.println("__");//debug
+		if (stBuffer!="") {//We have something to send (like the sensor info)
+			//Serial.print(stBuffer);
+			Serial1.print(stBuffer);
+		}
+		else {//send alive bit if nothing else to send
+			Serial1.print("Y ");
+		}
 		ulTimeOld = millis();
 	}
 

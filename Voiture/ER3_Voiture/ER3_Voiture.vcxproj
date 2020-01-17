@@ -119,12 +119,14 @@
     <ClInclude Include="Algorithm.h" />
     <ClInclude Include="Bluetooth.h" />
     <ClInclude Include="Moteur.h" />
+    <ClInclude Include="Sensor.h" />
     <ClInclude Include="__vm\.ER3_Voiture.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Algorithm.cpp" />
     <ClCompile Include="Bluetooth.cpp" />
     <ClCompile Include="Moteur.cpp" />
+    <ClCompile Include="Sensor.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

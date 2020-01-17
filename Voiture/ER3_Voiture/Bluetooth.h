@@ -3,14 +3,13 @@
 #define BT_SPEED 57600
 #define ANSWER_TIME 150
 
+
 class Bluetooth
 {
-private : 
-
-
 public :
 
 	bool bHasAnswer;
+	String stBuffer;
 	unsigned long ulLastReceived = 0;
 
 	Bluetooth();

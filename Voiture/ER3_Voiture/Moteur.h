@@ -2,7 +2,6 @@
 #define FORWARD 1 
 #define REVERSE 0 
 
-
 class Moteur
 {
 public :
