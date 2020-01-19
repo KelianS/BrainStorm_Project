@@ -60,7 +60,7 @@ void Algorithm::State_Update() {
 		else if (bReceived) {
 			State = RECEIVING;
 		}
-		else if (cParam == 'E' && byValue1 == 255 && byValue2 == 255) {
+		else if ((cParam == 'E') && (byValue1 == 255) && (byValue2 == 255)) {//E255255 = AUTO
 			State = AUTONOMOUS;
 			Serial.println("Autonomous");
 			digitalWrite(LED_TOP, 255);
@@ -73,7 +73,7 @@ void Algorithm::State_Update() {
 			Serial.println("disconnected");
 			digitalWrite(LED_TOP, 0);
 		}
-		else if (!bIR_Left && !bIR_Mid && !bIR_Right) {
+		else if (!bIR_Left && !bIR_Mid && !bIR_Right) { //If !E255255 = Not Auto anymore
 			State = RUNNING;
 		}
 		else if (bReceived) {
@@ -87,7 +87,7 @@ void Algorithm::State_Update() {
 			Serial.println("disconnected");
 			digitalWrite(LED_TOP, 0);
 		}
-		else if (cParam == 'E' && byValue1 == 0 && byValue2 == 0) {
+		else if ((cParam != 'E') || (byValue1 != 255) || (byValue2 != 255)) {
 			State = RUNNING;
 		}
 		break;
