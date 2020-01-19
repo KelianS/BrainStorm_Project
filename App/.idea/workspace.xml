@@ -47,7 +47,34 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2907f735-c55b-4076-a55c-7c1da0d1fcb7" name="Default" comment="Hello GEII" />
+    <list default="true" id="2907f735-c55b-4076-a55c-7c1da0d1fcb7" name="Default" comment="Hello GEII">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_kelia_Documents_Ecole_ER3_Projet_BrainStorm_Project_App_Application_libs_NskAlgoSdk_jar_unspecified_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_kelia_Documents_Ecole_ER3_Projet_BrainStorm_Project_App_Application_libs_libStreamSDK_jar_unspecified_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$integer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$mipmap.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$mipmap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$style.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/R$styleable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceControlActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceControlActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/THE_App.iml" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,76 +102,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceControlActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="505" column="19" lean-forward="true" selection-start-line="505" selection-start-column="19" selection-end-line="505" selection-end-column="19" />
+            <state relative-caret-position="128">
+              <caret line="105" column="37" lean-forward="true" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
               <folding>
-                <element signature="class#4611:5292" />
-                <element signature="method#onServiceConnected#0;class#4611:5292" />
-                <element signature="method#onServiceDisconnected#0;class#4611:5292" />
-                <element signature="e#5299#5346#0" />
-                <element signature="e#6978#8176#1" />
-                <element signature="class#11803:12252" />
-                <element signature="method#onProgressChanged#0;class#11809:12346" />
-                <element signature="e#12053#12054#0" expanded="true" />
-                <element signature="e#12107#12108#0" expanded="true" />
-                <element signature="method#onStartTrackingTouch#0;class#11803:12252" />
-                <element signature="class#12286:12726" />
-                <element signature="method#onProgressChanged#0;class#12305:12864" />
-                <element signature="e#12536#12537#0" expanded="true" />
-                <element signature="e#12594#12595#0" expanded="true" />
-                <element signature="method#onStartTrackingTouch#0;class#12286:12726" />
-                <element signature="e#12258#12745#0" />
-                <element signature="e#12253#12315#0" expanded="true" />
-                <element signature="e#12802#12917#0" />
-                <element signature="e#13201#13354#1" />
-                <element signature="e#13372#13422#0" />
-                <element signature="e#13577#13868#0" expanded="true" />
-                <element signature="e#13780#13851#1" />
-                <element signature="e#13857#13923#1" />
-                <element signature="e#13867#13868#0" expanded="true" />
-                <element signature="e#13910#14068#0" expanded="true" />
-                <element signature="e#14067#14068#0" expanded="true" />
-                <element signature="e#14541#15023#1" />
-                <element signature="e#14387#14700#0" expanded="true" />
-                <element signature="e#14699#14700#0" expanded="true" />
-                <element signature="e#15205#19007#1" />
-                <element signature="e#15078#15212#1" />
-                <element signature="e#15313#15449#1" />
-                <element signature="e#15645#15725#1" />
-                <element signature="e#15778#18684#0" expanded="true" />
-                <element signature="e#16215#16508#1" />
-                <element signature="e#17295#17495#1" />
-                <element signature="e#17629#17925#1" />
-                <element signature="e#18004#18300#1" />
-                <element signature="e#18683#18684#0" expanded="true" />
-                <element signature="e#19189#19631#1" />
-                <element signature="e#18950#19290#0" expanded="true" />
-                <element signature="e#19289#19290#0" expanded="true" />
-                <element signature="e#19804#20266#1" />
-                <element signature="e#19709#19942#0" expanded="true" />
-                <element signature="e#19941#19942#0" expanded="true" />
-                <element signature="e#21095#21477#0" />
-                <element signature="e#22166#22405#0" />
-                <element signature="e#22412#22783#0" />
-                <element signature="e#23937#24222#1" />
-                <element signature="e#24246#24349#1" />
-                <element signature="e#24355#24716#1" />
-                <element signature="e#24907#25192#1" />
-                <element signature="e#25216#25319#1" />
-                <element signature="e#25325#25677#1" />
-                <element signature="e#25404#25492#1" />
-                <element signature="e#25498#25659#1" />
-                <element signature="e#25758#26394#0" />
-                <element signature="e#28248#28712#0" />
-                <element signature="e#28718#29228#0" />
-                <element signature="e#29234#29471#0" />
-                <element signature="e#29477#32312#0" />
-                <element signature="e#30614#32306#1" />
-                <element signature="e#32318#32782#0" />
-                <element signature="e#32788#33834#0" />
-                <element signature="e#33839#34520#0" />
-                <element signature="method#onDataReceived#0;class#35354:40384" />
-                <element signature="e#40391#40664#0" />
+                <element signature="e#20697#20929#0" expanded="true" />
+                <element signature="e#20928#20929#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,8 +116,8 @@
         <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="3893">
-              <caret line="232" column="8" selection-start-line="232" selection-start-column="8" selection-end-line="232" selection-end-column="8" />
+            <state relative-caret-position="3502">
+              <caret line="209" column="8" selection-start-line="209" selection-start-column="8" selection-end-line="209" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -171,11 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>BluetoothTh</find>
-      <find>Log.i</find>
-      <find>insert</find>
-      <find>m_DataBase_show</find>
-      <find>itest</find>
       <find>connecte</find>
       <find>seekG</find>
       <find>m_Database</find>
@@ -198,16 +155,21 @@
       <find>intent</find>
       <find>attention</find>
       <find>iConnected</find>
-      <find>bConnected</find>
       <find>mConnected</find>
       <find>bZen</find>
+      <find>zen</find>
+      <find>bConnected</find>
+      <find>bZenButton</find>
+      <find>bZenBu</find>
+      <find>iMedActivate</find>
+      <find>iMed</find>
     </findStrings>
     <replaceStrings>
       <replace>HM_10</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -239,11 +201,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="519" />
+    <option name="width" value="1408" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -348,7 +309,7 @@
     <property name="android.project.structure.last.selected" value="Application" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="device.picker.selection" value="3201cfd64521b4f3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BrainStorm_Project-Zen-and-concentration-mode-without-database/BrainStorm_Project-Zen/App" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/oldTHE_App" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -568,7 +529,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="519" y="0" width="1408" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -578,7 +539,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Captures" order="5" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="6" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.12686567" />
+      <window_info content_ui="combo" id="Project" order="7" weight="0.12686567" />
       <window_info id="Resources Explorer" order="8" />
       <window_info id="DB Browser" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -588,7 +549,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32977587" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.4977307" visible="true" weight="0.18435155" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4977307" weight="0.18435155" />
       <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.9226891" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.09754797" side_tool="true" weight="0.6638207" />
       <window_info anchor="bottom" id="Logcat" order="10" sideWeight="0.90245205" weight="0.96798295" />
@@ -724,38 +685,9 @@
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DatabaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/activity_data.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/RobotData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DatabaseManager.java" />
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/activity_data.xml" />
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/RobotData.java" />
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/BluetoothLeService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="657">
@@ -839,16 +771,7 @@
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/app/Instrumentation.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/app/Activity.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/os/MessageQueue.java" />
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/Data.java" />
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceScanActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -863,7 +786,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="526">
           <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
@@ -872,87 +794,23 @@
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="3893">
-          <caret line="232" column="8" selection-start-line="232" selection-start-column="8" selection-end-line="232" selection-end-column="8" />
+        <state relative-caret-position="3502">
+          <caret line="209" column="8" selection-start-line="209" selection-start-column="8" selection-end-line="209" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceControlActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="505" column="19" lean-forward="true" selection-start-line="505" selection-start-column="19" selection-end-line="505" selection-end-column="19" />
+        <state relative-caret-position="128">
+          <caret line="105" column="37" lean-forward="true" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
           <folding>
-            <element signature="class#4611:5292" />
-            <element signature="method#onServiceConnected#0;class#4611:5292" />
-            <element signature="method#onServiceDisconnected#0;class#4611:5292" />
-            <element signature="e#5299#5346#0" />
-            <element signature="e#6978#8176#1" />
-            <element signature="class#11803:12252" />
-            <element signature="method#onProgressChanged#0;class#11809:12346" />
-            <element signature="e#12053#12054#0" expanded="true" />
-            <element signature="e#12107#12108#0" expanded="true" />
-            <element signature="method#onStartTrackingTouch#0;class#11803:12252" />
-            <element signature="class#12286:12726" />
-            <element signature="method#onProgressChanged#0;class#12305:12864" />
-            <element signature="e#12536#12537#0" expanded="true" />
-            <element signature="e#12594#12595#0" expanded="true" />
-            <element signature="method#onStartTrackingTouch#0;class#12286:12726" />
-            <element signature="e#12258#12745#0" />
-            <element signature="e#12253#12315#0" expanded="true" />
-            <element signature="e#12802#12917#0" />
-            <element signature="e#13201#13354#1" />
-            <element signature="e#13372#13422#0" />
-            <element signature="e#13577#13868#0" expanded="true" />
-            <element signature="e#13780#13851#1" />
-            <element signature="e#13857#13923#1" />
-            <element signature="e#13867#13868#0" expanded="true" />
-            <element signature="e#13910#14068#0" expanded="true" />
-            <element signature="e#14067#14068#0" expanded="true" />
-            <element signature="e#14541#15023#1" />
-            <element signature="e#14387#14700#0" expanded="true" />
-            <element signature="e#14699#14700#0" expanded="true" />
-            <element signature="e#15205#19007#1" />
-            <element signature="e#15078#15212#1" />
-            <element signature="e#15313#15449#1" />
-            <element signature="e#15645#15725#1" />
-            <element signature="e#15778#18684#0" expanded="true" />
-            <element signature="e#16215#16508#1" />
-            <element signature="e#17295#17495#1" />
-            <element signature="e#17629#17925#1" />
-            <element signature="e#18004#18300#1" />
-            <element signature="e#18683#18684#0" expanded="true" />
-            <element signature="e#19189#19631#1" />
-            <element signature="e#18950#19290#0" expanded="true" />
-            <element signature="e#19289#19290#0" expanded="true" />
-            <element signature="e#19804#20266#1" />
-            <element signature="e#19709#19942#0" expanded="true" />
-            <element signature="e#19941#19942#0" expanded="true" />
-            <element signature="e#21095#21477#0" />
-            <element signature="e#22166#22405#0" />
-            <element signature="e#22412#22783#0" />
-            <element signature="e#23937#24222#1" />
-            <element signature="e#24246#24349#1" />
-            <element signature="e#24355#24716#1" />
-            <element signature="e#24907#25192#1" />
-            <element signature="e#25216#25319#1" />
-            <element signature="e#25325#25677#1" />
-            <element signature="e#25404#25492#1" />
-            <element signature="e#25498#25659#1" />
-            <element signature="e#25758#26394#0" />
-            <element signature="e#28248#28712#0" />
-            <element signature="e#28718#29228#0" />
-            <element signature="e#29234#29471#0" />
-            <element signature="e#29477#32312#0" />
-            <element signature="e#30614#32306#1" />
-            <element signature="e#32318#32782#0" />
-            <element signature="e#32788#33834#0" />
-            <element signature="e#33839#34520#0" />
-            <element signature="method#onDataReceived#0;class#35354:40384" />
-            <element signature="e#40391#40664#0" />
+            <element signature="e#20697#20929#0" expanded="true" />
+            <element signature="e#20928#20929#0" expanded="true" />
           </folding>
         </state>
       </provider>

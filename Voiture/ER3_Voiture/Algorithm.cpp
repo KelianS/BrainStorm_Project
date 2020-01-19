@@ -62,6 +62,8 @@ void Algorithm::State_Update() {
 		}
 		else if ((cParam == 'E') && (byValue1 == 255) && (byValue2 == 255)) {//E255255 = AUTO
 			State = AUTONOMOUS;
+			StAuto_old = THREESENS;//raz Auto mode
+
 			Serial.println("Autonomous");
 			digitalWrite(LED_TOP, 255);
 		}
@@ -207,25 +209,21 @@ void Algorithm::Async_Auto() {
 			case NO_SENS: //Forward
 				mMoteur.Right(FORWARD, 110);
 				mMoteur.Left(FORWARD, 110);
-				//Serial.print("-");
 				break;
 
 			case LEFT:
 				mMoteur.Right(REVERSE, 128);
 				mMoteur.Left(FORWARD, 50);
-				Serial.println("L");
 				ulLastRefreshAuto = millis();//take time of the last hit
 				break;
 			case RIGHT:
 				mMoteur.Right(FORWARD, 50);
 				mMoteur.Left(REVERSE, 128);
-				Serial.println("R");
 				ulLastRefreshAuto = millis();
 				break;
 			case MID:
 				mMoteur.Right(REVERSE, 150);
 				mMoteur.Left(FORWARD, 80);
-				Serial.println("M");
 				ulLastRefreshAuto = millis();
 				break;
 			case TWOSENS_L :

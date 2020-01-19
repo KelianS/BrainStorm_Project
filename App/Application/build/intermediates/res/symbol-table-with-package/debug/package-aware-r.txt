@@ -652,6 +652,7 @@ id ALT
 id CTRL
 id DataBase_show
 id FUNCTION
+id FocusButton
 id META
 id ReturnButton
 id SHIFT
@@ -802,6 +803,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
 id time
 id title
 id titleDividerNoCustom

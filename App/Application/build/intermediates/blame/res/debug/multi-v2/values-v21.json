@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kelia\\Desktop\\THE_App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "C:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\BrainStorm_Project\\App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
-                {
-                    "source": "C:\\Users\\kelia\\Desktop\\THE_App\\Application\\src\\main\\res\\values-v21\\base-template-styles.xml",
-                    "from": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "677",
-                        "endLines": "21",
-                        "endColumns": "12",
-                        "endOffsets": "753"
-                    },
-                    "to": {
-                        "startLines": "279",
-                        "startColumns": "4",
-                        "startOffsets": "20427",
-                        "endLines": "280",
-                        "endColumns": "12",
-                        "endOffsets": "20503"
-                    }
-                },
                 {
                     "source": "C:\\Users\\kelia\\.gradle\\caches\\transforms-2\\files-2.1\\dcfcc542c4b73bfbf50e345412fad0a8\\res\\values-v21\\values-v21.xml",
                     "from": {
@@ -39,6 +20,25 @@
                         "endLines": "267,270,274,278",
                         "endColumns": "12,12,12,12",
                         "endOffsets": "19670,19833,20127,20422"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\BrainStorm_Project\\App\\Application\\src\\main\\res\\values-v21\\base-template-styles.xml",
+                    "from": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "677",
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "753"
+                    },
+                    "to": {
+                        "startLines": "279",
+                        "startColumns": "4",
+                        "startOffsets": "20427",
+                        "endLines": "280",
+                        "endColumns": "12",
+                        "endOffsets": "20503"
                     }
                 },
                 {

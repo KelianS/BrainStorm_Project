@@ -112,8 +112,7 @@ public class DeviceControlActivity extends Activity {
     private int iTest = 0;
     private boolean bConnected = false;
     private int iOldAttValue = 0; //for Attention mode
-    private int iMed = 0;         //for Zen Mode
-    private int iMedActivate = 0;
+    private int iMedActivate = 0;//for Zen Mode
     private boolean bZenModeActivate = false;
 
 
@@ -268,8 +267,8 @@ public class DeviceControlActivity extends Activity {
         sqText = this.findViewById(R.id.sqText);
         bZenButton = findViewById(R.id.ZenButton);
 
-        bZenButton.setBackgroundColor(Color.DKGRAY); //Change the color of the background for the zen mode button
-        bZenButton.setTextColor(Color.WHITE); //Change the color of the text for the zen mode button
+        bZenButton.setBackgroundColor(0xBB808080);//Change the color of the background for the zen mode button
+        bZenButton.setTextColor(Color.BLACK); //Change the color of the text for the zen mode button
 
         seekD.setMax(510);
         seekG.setMax(510);
@@ -504,11 +503,16 @@ public class DeviceControlActivity extends Activity {
                         medValue.setText(finalMedStr);
                     }
                 });
-                iMed = value;
+                int iMed = value;
                 if(iMed>=80 && iMedActivate == 0 && bZenModeActivate == true){
                     iMedActivate = 1;
+                    bZenButton.setBackgroundColor(0xbb10ff10);//green
+
                 }else if(iMed< 50 || bZenModeActivate == false){
                     iMedActivate = 0;
+                    if(bZenModeActivate == true){
+                        bZenButton.setBackgroundColor(0xBBFFCC33);//yellow
+                    }
                 }
 
             }
@@ -578,20 +582,20 @@ public class DeviceControlActivity extends Activity {
     }
 
     public void OnClickZen(View view){
-        if(bConnected == true) {
+
             if (bZenModeActivate == false) {
-                bZenModeActivate = true;
-                bZenButton.setBackgroundColor(Color.GREEN);
-            } else {
+                if(bConnected == true) {
+                    bZenModeActivate = true;
+                    bZenButton.setBackgroundColor(0xBBFFCC33);//yellow
+                }
+                else{
+                    Toast.makeText(this,"Please connect the Brain wave before use Zen or Concentration mode",Toast.LENGTH_LONG).show();
+                }
+            }else{
                 bZenModeActivate = false;
-                bZenButton.setBackgroundColor(Color.DKGRAY);
+                bZenButton.setBackgroundColor(0xBB808080);//default grey
             }
-        }else{
-            Toast.makeText(
-                    this,"Please connect the Brain wave before use Zen or Concentration mode"
-                    ,
-                    Toast.LENGTH_LONG).show();
-        }
+
     }
 
 
@@ -688,13 +692,13 @@ public class DeviceControlActivity extends Activity {
                         iOldvalueR = iValueR;
                         iOldvalueL = iValueL;
                     }
-                    if (iMedActivate == 1) {
+                    if(iMedActivate == 1) {
                         bluetoothGattCharacteristicHM_10.setValue("E255255 ");
-                    } else {
+                    }else {
                         bluetoothGattCharacteristicHM_10.setValue(cMovementFinale + sBarR + sBarL + " ");
-                        mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
-                        mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, true);
                     }
+                    mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
+                    mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, true);
                 }
             }
         }
@@ -907,7 +911,7 @@ public class DeviceControlActivity extends Activity {
                     tgStreamReader.start();
                     SetAlgo();
                     showToast(getApplicationContext().getString(R.string.msg_connected),  Toast.LENGTH_LONG);
-                    mConnected = true;
+                    bConnected = true;
                     break;
                 case ConnectionStates.STATE_WORKING:
                     // Do something when working

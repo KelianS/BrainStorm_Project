@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kelia\\Desktop\\THE_App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\BrainStorm_Project\\App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
-                {
-                    "source": "C:\\Users\\kelia\\Desktop\\THE_App\\Application\\src\\main\\res\\values\\base-strings.xml",
-                    "from": {
-                        "startLines": "18,19",
-                        "startColumns": "4,4",
-                        "startOffsets": "647,698",
-                        "endLines": "18,28",
-                        "endColumns": "50,13",
-                        "endOffsets": "693,969"
-                    },
-                    "to": {
-                        "startLines": "375,381",
-                        "startColumns": "4,4",
-                        "startOffsets": "22362,22769",
-                        "endLines": "375,390",
-                        "endColumns": "50,13",
-                        "endOffsets": "22408,23040"
-                    }
-                },
                 {
                     "source": "C:\\Users\\kelia\\.gradle\\caches\\transforms-2\\files-2.1\\6cfc2473b2437261b13fd1491458e33c\\res\\values\\values.xml",
                     "from": {
@@ -59,7 +40,43 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kelia\\Desktop\\THE_App\\Application\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\BrainStorm_Project\\App\\Application\\src\\main\\res\\values\\ic_launcher_background.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    },
+                    "to": {
+                        "startLines": "167",
+                        "startColumns": "4",
+                        "startOffsets": "8652",
+                        "endColumns": "56",
+                        "endOffsets": "8704"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\BrainStorm_Project\\App\\Application\\src\\main\\res\\values\\base-strings.xml",
+                    "from": {
+                        "startLines": "18,19",
+                        "startColumns": "4,4",
+                        "startOffsets": "647,698",
+                        "endLines": "18,28",
+                        "endColumns": "50,13",
+                        "endOffsets": "693,969"
+                    },
+                    "to": {
+                        "startLines": "375,381",
+                        "startColumns": "4,4",
+                        "startOffsets": "22362,22769",
+                        "endLines": "375,390",
+                        "endColumns": "50,13",
+                        "endOffsets": "22408,23040"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\BrainStorm_Project\\App\\Application\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "15,28,29,31,32,22,21,16,17,23,20,25,19,24,18,26,42,43,44,45,33,34,35,27,30,38,37,39",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -76,7 +93,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kelia\\Desktop\\THE_App\\Application\\src\\main\\res\\values\\template-styles.xml",
+                    "source": "C:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\BrainStorm_Project\\App\\Application\\src\\main\\res\\values\\template-styles.xml",
                     "from": {
                         "startLines": "24,20,22,27,29,34",
                         "startColumns": "4,4,4,4,4,4",
@@ -92,23 +109,6 @@
                         "endLines": "421,1728,1729,1737,1837,1843",
                         "endColumns": "50,59,52,26,12,12",
                         "endOffsets": "24876,111427,111480,112179,120084,120362"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\kelia\\Desktop\\THE_App\\Application\\src\\main\\res\\values\\template-dimens.xml",
-                    "from": {
-                        "startLines": "28,24,23,22,21,20,29",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "959,880,836,791,748,706,1029",
-                        "endColumns": "69,42,43,44,42,41,67",
-                        "endOffsets": "1024,918,875,831,786,743,1092"
-                    },
-                    "to": {
-                        "startLines": "294,295,296,297,298,299,323",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "17359,17429,17472,17516,17561,17604,19077",
-                        "endColumns": "69,42,43,44,42,41,67",
-                        "endOffsets": "17424,17467,17511,17556,17599,17641,19140"
                     }
                 },
                 {
@@ -150,23 +150,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kelia\\Desktop\\THE_App\\Application\\src\\main\\res\\values\\ic_launcher_background.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "56",
-                        "endOffsets": "107"
-                    },
-                    "to": {
-                        "startLines": "167",
-                        "startColumns": "4",
-                        "startOffsets": "8652",
-                        "endColumns": "56",
-                        "endOffsets": "8704"
-                    }
-                },
-                {
                     "source": "C:\\Users\\kelia\\.gradle\\caches\\transforms-2\\files-2.1\\daa836532e326901ed7b7e5fd2bc910b\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,7,8,9,10,17,19,22,6",
@@ -183,6 +166,23 @@
                         "endLines": "154,155,156,157,277,278,279,448,1462,1465,1468,1905",
                         "endColumns": "60,61,61,63,58,56,53,12,12,12,12,684",
                         "endOffsets": "7844,7906,7968,8032,16118,16175,16229,26652,91011,91137,91265,132835"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\BrainStorm_Project\\App\\Application\\src\\main\\res\\values\\template-dimens.xml",
+                    "from": {
+                        "startLines": "28,24,23,22,21,20,29",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "959,880,836,791,748,706,1029",
+                        "endColumns": "69,42,43,44,42,41,67",
+                        "endOffsets": "1024,918,875,831,786,743,1092"
+                    },
+                    "to": {
+                        "startLines": "294,295,296,297,298,299,323",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "17359,17429,17472,17516,17561,17604,19077",
+                        "endColumns": "69,42,43,44,42,41,67",
+                        "endOffsets": "17424,17467,17511,17556,17599,17641,19140"
                     }
                 }
             ]

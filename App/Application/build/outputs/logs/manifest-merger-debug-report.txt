@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:2:1-47:12
+ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:2:1-47:12
 MERGED from [com.android.support:support-v13:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\b281a9df82a056fb0ede1d1d88d89e86\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\eaae3b923c3377c7bc6505b8d080c0d5\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\daa836532e326901ed7b7e5fd2bc910b\AndroidManifest.xml:17:1-22:12
@@ -16,92 +16,92 @@ MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\kelia\.gradle\
 MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\73470ea4061aa2939a1d443dfe42a023\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\6cfc2473b2437261b13fd1491458e33c\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\187b3acb856e7ce18775a18b6a43c61e\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:2:1-47:12
 	package
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:3:5-45
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:3:5-45
 	android:versionName
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:5:5-30
-		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
 uses-feature#android.hardware.bluetooth_le
-ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:14:5-16:35
+ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:14:5-16:35
 	android:required
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:16:9-32
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:16:9-32
 	android:name
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:15:9-53
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:15:9-53
 uses-permission#android.permission.BLUETOOTH
-ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:19:5-68
+ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:19:5-68
 	android:name
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:19:22-65
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:19:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:20:5-74
+ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:20:5-74
 	android:name
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:20:22-71
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:20:22-71
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:21:5-81
+ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:21:5-81
 	android:name
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:21:22-78
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:21:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:22:5-79
+ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:22:22-76
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:22:22-76
 application
-ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:24:5-45:19
+ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:24:5-45:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\ab6c4139f4c930057d459484040fe7b1\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\ab6c4139f4c930057d459484040fe7b1\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:26:9-41
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:26:9-41
 	android:icon
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:25:9-43
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:25:9-43
 	android:theme
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:27:9-56
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:27:9-56
 activity#com.example.android.headsetBLE.DeviceScanActivity
-ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:28:9-36:20
+ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:28:9-36:20
 	android:screenOrientation
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:31:13-49
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:31:13-49
 	android:label
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:30:13-45
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:30:13-45
 	android:name
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:29:13-47
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:29:13-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:32:13-35:29
+ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:32:13-35:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:33:17-69
+ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:33:25-66
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:34:17-77
+ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:34:27-74
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:34:27-74
 activity#com.example.android.headsetBLE.DeviceControlActivity
-ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:37:9-38:51
+ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:37:9-38:51
 	android:screenOrientation
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:38:13-49
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:38:13-49
 	android:name
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:37:19-56
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:37:19-56
 activity#com.example.android.headsetBLE.Data
-ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:39:9-40:51
+ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:39:9-40:51
 	android:screenOrientation
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:40:13-49
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:40:13-49
 	android:name
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:39:19-39
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:39:19-39
 service#com.example.android.headsetBLE.BluetoothLeService
-ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:42:9-44:38
+ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:42:9-44:38
 	android:enabled
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:44:13-35
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:44:13-35
 	android:name
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:43:13-47
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:43:13-47
 uses-sdk
-INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
-INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
 MERGED from [com.android.support:support-v13:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\b281a9df82a056fb0ede1d1d88d89e86\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v13:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\b281a9df82a056fb0ede1d1d88d89e86\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\eaae3b923c3377c7bc6505b8d080c0d5\AndroidManifest.xml:20:5-44
@@ -128,13 +128,13 @@ MERGED from [com.android.support:support-compat:27.0.2] C:\Users\kelia\.gradle\c
 MERGED from [com.android.support:support-compat:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\6cfc2473b2437261b13fd1491458e33c\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\187b3acb856e7ce18775a18b6a43c61e\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\187b3acb856e7ce18775a18b6a43c61e\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
-INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kelia\Documents\Ecole\ER3\Projet\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
