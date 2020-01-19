@@ -13,6 +13,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ReturnButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickControlReturn"
+            android:text="Return Control" />
+
         <TextView
             android:id="@+id/dataBase_value"
             android:layout_width="match_parent"

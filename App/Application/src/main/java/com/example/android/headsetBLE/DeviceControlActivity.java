@@ -16,6 +16,8 @@
 
 package com.example.android.headsetBLE;
 import android.bluetooth.BluetoothClass;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Looper;
 import android.view.View;
 
@@ -70,6 +72,7 @@ import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -80,40 +83,46 @@ import java.util.UUID;
  */
 public class DeviceControlActivity extends Activity {
     private final static String TAG = "BTLE";
-
     public static final String EXTRAS_DEVICE_NAME = "DEVICE_NAME";
     public static final String EXTRAS_DEVICE_ADDRESS = "DEVICE_ADDRESS";
-    private DatabaseManager m_DatabaseManager;
-
+    public String mDeviceName;
 
     private TextView mConnectionState;
-    private TextView mDataField;
-
     private String mDeviceAddress;
     public BluetoothLeService mBluetoothLeService;
     private ArrayList<ArrayList<BluetoothGattCharacteristic>> mGattCharacteristics =
             new ArrayList<>();
     private boolean mConnected = false;
+
     private BluetoothGattCharacteristic mNotifyCharacteristic;
-
-
-
     public BluetoothGattCharacteristic bluetoothGattCharacteristicHM_10;
 
-
     // variable for headset
-
     private TgStreamReader tgStreamReader;
     private BluetoothAdapter mBluetoothAdapter;
 
     // internal variables
     private boolean bInited = false;
     private boolean bRunning = false;
+    private int iValueL;//Seekbar values
+    private int iValueR;
+    private int iOldvalueR = 0;//seekbar for database
+    private int iOldvalueL = 0;
+    private boolean bstart = false; //BT Thread running
+    private int iTest = 0;
+    private boolean bConnected = false;
+    private int iOldAttValue = 0; //for Attention mode
+    private int iMed = 0;         //for Zen Mode
+    private int iMedActivate = 0;
+    private boolean bZenModeActivate = false;
+
+
 
     // canned data variables to compute blink
     short[] raw_data = {0};
     private int raw_data_index= 0;
-    // UI components fo headset
+
+    // UI components for headset
     private Button headsetButton;
     private Button startButton;
     private Button stopButton;
@@ -123,17 +132,17 @@ public class DeviceControlActivity extends Activity {
     private TextView sqText;
     private ImageView blinkImage;
     private NskAlgoSdk nskAlgoSdk;
-    private int bLastOutputInterval = 1;
 
+    //UI components for threads
+    private SeekBar seekG;
+    private SeekBar seekD;
 
+    //UI components ZEN / ATTENTION MODE
+    private Button bZenButton;
 
+    //DataBase
+    private DatabaseManager m_DatabaseManager;
 
-//    static public Handler mHandler = new Handler() {
-//
-////        public void handleMessage(Message msg) {
-////            String myString=(String) msg.obj;
-////        }
-//    };
 
 
     // Code to manage Service lifecycle.
@@ -173,6 +182,9 @@ public class DeviceControlActivity extends Activity {
                 Begin();
                 final Button m_DataBase_show = findViewById(R.id.DataBase_show);
                 m_DataBase_show.setEnabled(true);
+                if (iTest == 0){
+                    m_DataBase_show.setClickable(true);
+                }
             } else if (BluetoothLeService.ACTION_GATT_DISCONNECTED.equals(action)) {
                 mConnected = false;
                 updateConnectionState(R.string.disconnected);
@@ -204,93 +216,64 @@ public class DeviceControlActivity extends Activity {
                     }
 
                 }
+
+            /***************** Listener Received Data from the Car here ******************/
             } else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
-                displayData(intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
                 if(bluetoothGattCharacteristicHM_10 != null){
                     bluetoothGattCharacteristicHM_10.setValue("Z ");
                     mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
                     mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10,true);
                 }
             }
+            /*****************************************************************************/
 
         }
     };
 
-    //
-
-
-    public void onClickDataBaseButton(View view){
-        Intent myIntentDataBase = new Intent(DeviceControlActivity.this,Data.class);
-        startActivity(myIntentDataBase);
-        Log.d("!!!!!!!!!!!!!!!!","RUN");
-    }
-
-
-
-
-    public SeekBar seekG;
-    public SeekBar seekD;
-
-
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.gatt_services_characteristics);
-        String mDeviceName;
-        final Button m_DataBase_show = findViewById(R.id.DataBase_show);
-        m_DataBase_show.setEnabled(false);
-        m_DatabaseManager = new DatabaseManager(this);
-        seekG = this.findViewById(R.id.SeekBarL);
-        seekD = this.findViewById(R.id.SeekBarR);
-
         final Intent intent = getIntent();
+
+        //BT Init
+        setContentView(R.layout.gatt_services_characteristics);
         mDeviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
         mDeviceAddress = intent.getStringExtra(EXTRAS_DEVICE_ADDRESS);
+        nskAlgoSdk = new NskAlgoSdk();
 
-        // Sets up UI references.
+        // Sets up UI references
         ((TextView) findViewById(R.id.device_address)).setText(mDeviceAddress);
         mConnectionState = (TextView) findViewById(R.id.connection_state);
-        mDataField = (TextView) findViewById(R.id.data_value);
-
         getActionBar().setTitle(mDeviceName);
         getActionBar().setDisplayHomeAsUpEnabled(true);
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 
-        nskAlgoSdk = new NskAlgoSdk();
+        //DataBase Init
+        final Button m_DataBase_show = findViewById(R.id.DataBase_show);
+        m_DataBase_show.setEnabled(false);
+        m_DatabaseManager = new DatabaseManager(this);
 
-        try {
-            // (1) Make sure that the device supports Bluetooth and Bluetooth is on
-            mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-            if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled()) {
-                Toast.makeText(
-                        this,getApplicationContext().getString(R.string.error_no_bluetooth)
-                        ,
-                        Toast.LENGTH_LONG).show();
-                //finish();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            Log.i(TAG, "error:" + e.getMessage());
-            return;
-        }
-
+        //Graphical object association
         headsetButton = this.findViewById(R.id.headsetButton);
         startButton = this.findViewById(R.id.startButton);
         stopButton = this.findViewById(R.id.stopButton);
-
+        seekG = this.findViewById(R.id.SeekBarL);
+        seekD = this.findViewById(R.id.SeekBarR);
         attValue = this.findViewById(R.id.attText);
         medValue = this.findViewById(R.id.medText);
-
         blinkImage = this.findViewById(R.id.blinkImage);
-
         stateText = this.findViewById(R.id.stateText);
         sqText = this.findViewById(R.id.sqText);
+        bZenButton = findViewById(R.id.ZenButton);
 
+        bZenButton.setBackgroundColor(Color.DKGRAY); //Change the color of the background for the zen mode button
+        bZenButton.setTextColor(Color.WHITE); //Change the color of the text for the zen mode button
 
+        seekD.setMax(510);
+        seekG.setMax(510);
+        /********* Return both Seekbar to 0 when release **********/
         this.seekG.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
             @Override
             public void onProgressChanged(SeekBar seekG, int i, boolean b) {
@@ -298,7 +281,7 @@ public class DeviceControlActivity extends Activity {
             }
 
             @Override
-            public void onStopTrackingTouch (SeekBar seekG){
+            public void onStopTrackingTouch (SeekBar seekG) {
                 seekG.setProgress(255);
             }
             @Override
@@ -315,17 +298,32 @@ public class DeviceControlActivity extends Activity {
 
             @Override
             public void onStopTrackingTouch (SeekBar seekD){
-                seekD.setProgress(255);
+                    seekD.setProgress(255);
             }
             @Override
             public void onStartTrackingTouch(SeekBar seekD) {
                 //
             }
         });
+        /**********************************************************/
 
 
-
-
+        /*********************** BT SetUp *************************/
+        try {
+            // (1) Make sure that the device supports Bluetooth and Bluetooth is on
+            mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+            if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled()) {
+                Toast.makeText(
+                        this,getApplicationContext().getString(R.string.error_no_bluetooth)
+                        ,
+                        Toast.LENGTH_LONG).show();
+                //finish();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.i(TAG, "error:" + e.getMessage());
+            return;
+        }
 
         headsetButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -478,15 +476,19 @@ public class DeviceControlActivity extends Activity {
         nskAlgoSdk.setOnAttAlgoIndexListener(new NskAlgoSdk.OnAttAlgoIndexListener() {
             @Override
             public void onAttAlgoIndex(int value) {
+
                 Log.d(TAG, "NskAlgoAttAlgoIndexListener: Attention:" + value);
                 final String finalAttStr = "[" + value + "]";
+                iOldAttValue = value;
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         // change UI elements here
                         attValue.setText(finalAttStr);
+
                     }
                 });
+
             }
         });
 
@@ -502,19 +504,27 @@ public class DeviceControlActivity extends Activity {
                         medValue.setText(finalMedStr);
                     }
                 });
+                iMed = value;
+                if(iMed>=80 && iMedActivate == 0 && bZenModeActivate == true){
+                    iMedActivate = 1;
+                }else if(iMed< 50 || bZenModeActivate == false){
+                    iMedActivate = 0;
+                }
+
             }
         });
 
+        /**********************Eye Blink Here ****************************/
         nskAlgoSdk.setOnEyeBlinkDetectionListener(new NskAlgoSdk.OnEyeBlinkDetectionListener() {
             @Override
             public void onEyeBlinkDetect(int strength) {
                 Log.d(TAG, "NskAlgoEyeBlinkDetectionListener: Eye blink detected: " + strength);
-                if(bluetoothGattCharacteristicHM_10 != null){
+               /* if(bluetoothGattCharacteristicHM_10 != null){
                     // send 'a' to BLE
                     bluetoothGattCharacteristicHM_10.setValue("a\n");
                     mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
                     mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10,true);
-                }
+                }*/
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -535,70 +545,73 @@ public class DeviceControlActivity extends Activity {
                 });
             }
         });
-
     }
-
-
-    private boolean bstart = false;
 
     void Begin(){ //receive seekbar from main activity
 
         bstart = true; //set to true the running
 
-        //start all Thread.
-        new Thread(new SeekBarReceive()).start();
+        //start the Thread.
         new Thread(new BluetoothSending()).start();
-
-
     }
-
 
     //fonction to stop
     void Stop(){
+        /*******Pause Thread to send**********/
+        bstart = false;
+
+        /******** Send Command to stop motors before disconnect *******************/
         while(bluetoothGattCharacteristicHM_10 == null) {};
         bluetoothGattCharacteristicHM_10.setValue("A000000 ");
         mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
         mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, true);
-
-        bstart = false;
     }
 
-    int iOldvalueR = 0;
-    int iOldvalueL = 0;
 
-    int iValueL;
-    int iValueR;
+    public void onClickDataBaseButton(View view){
+        //mBluetoothLeService = null;
+        Intent myIntentDataBase = new Intent(DeviceControlActivity.this,Data.class);
+        myIntentDataBase.putExtra(DeviceControlActivity.EXTRAS_DEVICE_NAME, mDeviceName);
+        myIntentDataBase.putExtra(DeviceControlActivity.EXTRAS_DEVICE_ADDRESS, mDeviceAddress);
+        startActivity(myIntentDataBase);
+        Log.d("DATABASE","RUN");
+    }
 
-    class SeekBarReceive implements Runnable {
-        @Override
-        public void run(){
-            while(bstart){
-                try {
-                    Thread.sleep(100);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                int iGprogress = seekG.getProgress();
-                //Log.i("GASPARD===========", Integer.toString(iGprogress));
-                int iDprogress = seekD.getProgress();
-                iValueL = iGprogress;
-                iValueR = iDprogress;
+    public void OnClickZen(View view){
+        if(bConnected == true) {
+            if (bZenModeActivate == false) {
+                bZenModeActivate = true;
+                bZenButton.setBackgroundColor(Color.GREEN);
+            } else {
+                bZenModeActivate = false;
+                bZenButton.setBackgroundColor(Color.DKGRAY);
             }
+        }else{
+            Toast.makeText(
+                    this,"Please connect the Brain wave before use Zen or Concentration mode"
+                    ,
+                    Toast.LENGTH_LONG).show();
         }
     }
 
 
+    /************************* Bluetooth Sending Thread : run every 50ms *************************/
     class BluetoothSending implements Runnable {
         @Override
-        public void run(){
-            while(bstart) {
+        public void run() {
+            while (bstart) {
                 try {
-                    Thread.sleep(100);
+                    Thread.sleep(50);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
 
-                /******* SeekBar Right : ********/
+                /*********** Get SeekBar Values ******/
+                iValueL = seekG.getProgress();
+                iValueR = seekD.getProgress();
+
+
+                /******* SeekBar Right Algo : ********/
                 String sBarR;
                 char cMovementR;
                 iValueR = iValueR - 255;
@@ -621,7 +634,7 @@ public class DeviceControlActivity extends Activity {
                     }
                 }
 
-                /******* SeekBar Left : ********/
+                /******* SeekBar Left Algo : ********/
                 String sBarL;
                 char cMovementL;
                 iValueL = iValueL - 255;
@@ -644,8 +657,8 @@ public class DeviceControlActivity extends Activity {
                     }
                 }
 
-
-                char cMovementFinale='A';
+                /*********** Final Movement Algo **************/
+                char cMovementFinale = 'A';
                 switch (cMovementR) {
                     case 'A'://Right Forward
                         if (cMovementL == 'A') {//Left Forward
@@ -662,27 +675,31 @@ public class DeviceControlActivity extends Activity {
                             cMovementFinale = 'B';
                         }
                         break;
-
                 }
 
 
-
+                /****************** Bluetooth Sending + Updating DataBase while sending ******************/
                 DateFormat df = new SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z");
                 String date = df.format(Calendar.getInstance().getTime());
-                if (bluetoothGattCharacteristicHM_10 != null)
-                {if((iOldvalueR != iValueR) || (iOldvalueL != iValueL)) {
-                    String sVal = "R : "+ Integer.toString( iValueR)+"  L : "+Integer.toString( iValueL )+"\n"+ date + "\n\n";
-                    m_DatabaseManager.insertScore(sVal);
-                    iOldvalueR = iValueR;
-                    iOldvalueL = iValueL;
-                }
-                    bluetoothGattCharacteristicHM_10.setValue(cMovementFinale + sBarR + sBarL + " ");
-                    mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
-                    mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, true);
+                if (bluetoothGattCharacteristicHM_10 != null) {
+                    if (((iOldvalueR != iValueR) || (iOldvalueL != iValueL)) && bConnected) {
+                        String sVal = "R : " + Integer.toString(iValueR) + "  L : " + Integer.toString(iValueL) + "\n" + date + "\n\n";
+                        m_DatabaseManager.insertScore(sVal);
+                        iOldvalueR = iValueR;
+                        iOldvalueL = iValueL;
+                    }
+                    if (iMedActivate == 1) {
+                        bluetoothGattCharacteristicHM_10.setValue("E255255 ");
+                    } else {
+                        bluetoothGattCharacteristicHM_10.setValue(cMovementFinale + sBarR + sBarL + " ");
+                        mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
+                        mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, true);
+                    }
                 }
             }
         }
     }
+
 
 
     @Override
@@ -703,21 +720,19 @@ public class DeviceControlActivity extends Activity {
     @Override
     protected void onPause() {
         Log.i("K : ", "Pause");
-
+        mBluetoothLeService.disconnect();
         super.onPause();
         unregisterReceiver(mGattUpdateReceiver);
         Stop();
-
     }
 
     @Override
     protected void onDestroy() {
         Log.i("K : ", "Destroy");
-
+        mBluetoothLeService.disconnect();
         super.onDestroy();
         unbindService(mServiceConnection);
         mBluetoothLeService = null;
-
     }
 
     @Override
@@ -756,12 +771,6 @@ public class DeviceControlActivity extends Activity {
                 mConnectionState.setText(resourceId);
             }
         });
-    }
-
-    private void displayData(String data) {
-        if (data != null) {
-            mDataField.setText(data);
-        }
     }
 
     // Demonstrates how to iterate through the supported GATT Services/Characteristics.
@@ -883,19 +892,6 @@ public class DeviceControlActivity extends Activity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
-    public static String Datetime()
-    {
-        Calendar c = Calendar.getInstance();
-
-        String sDate = "[" + c.get(Calendar.YEAR) + "/"
-                + (c.get(Calendar.MONTH)+1)
-                + "/" + c.get(Calendar.DAY_OF_MONTH)
-                + " " + c.get(Calendar.HOUR_OF_DAY)
-                + ":" + String.format("%02d", c.get(Calendar.MINUTE))
-                + ":" + String.format("%02d", c.get(Calendar.SECOND)) + "]";
-        return sDate;
-    }
-
     private TgStreamHandler callback = new TgStreamHandler() {
 
         @Override
@@ -911,6 +907,7 @@ public class DeviceControlActivity extends Activity {
                     tgStreamReader.start();
                     SetAlgo();
                     showToast(getApplicationContext().getString(R.string.msg_connected),  Toast.LENGTH_LONG);
+                    mConnected = true;
                     break;
                 case ConnectionStates.STATE_WORKING:
                     // Do something when working
@@ -951,6 +948,7 @@ public class DeviceControlActivity extends Activity {
                     break;
                 case ConnectionStates.STATE_DISCONNECTED:
                     // Do something when disconnected
+                    bConnected = false; // For debbug
                     break;
                 case ConnectionStates.STATE_ERROR:
                     // Do something when you get error message
@@ -1017,5 +1015,6 @@ public class DeviceControlActivity extends Activity {
 
         });
     }
+
 }
 

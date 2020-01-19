@@ -1,134 +1,140 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:2:1-44:12
-MERGED from [com.android.support:support-v13:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\18ed85889912b617224cbcca77c41f36\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\49f8f8c5874997e72a8c13abce146b0d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\963d874f50242dab8f4c5e15c8ab985d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\81131911294f738af9e3f794d3f8375d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\80681a4ac54ba5df8dc32eae4208bb09\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\9981244bad3c60d7c03f0f693900e221\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\cb5e331cbd152ca0a908875a5976f70b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\c38a4fa0a22bd06688df453ef447b48a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\9f777e6627d0c77d6f0ca535a8a4dd5d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\edea0f08ccfc96dd4cc6eb482e6c011c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\350307623fd1e90e35604fc2299d9e6c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\3c05595a4d841e8755054fd17d7370ae\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\ef92a5a4a56b9a6875765e91e5909bfb\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:2:1-47:12
+MERGED from [com.android.support:support-v13:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\b281a9df82a056fb0ede1d1d88d89e86\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\eaae3b923c3377c7bc6505b8d080c0d5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\daa836532e326901ed7b7e5fd2bc910b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\c01c1429618c182582aba4d2f4546028\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\ab6c4139f4c930057d459484040fe7b1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\dcfcc542c4b73bfbf50e345412fad0a8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\9537e904e841c334943c2a48137a7ca1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\f69264a07088ef1deab01b5dcb408d3b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\b1a5b82dc9fff46cb608e437575e1a7a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\e10586a01fd0103492459613defabd6b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\73470ea4061aa2939a1d443dfe42a023\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\6cfc2473b2437261b13fd1491458e33c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\187b3acb856e7ce18775a18b6a43c61e\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:2:1-47:12
 	package
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:3:5-45
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:3:5-45
 	android:versionName
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:5:5-30
-		INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
-		INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
-		INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
 uses-feature#android.hardware.bluetooth_le
-ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:14:5-16:35
+ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:14:5-16:35
 	android:required
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:16:9-32
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:16:9-32
 	android:name
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:15:9-53
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:15:9-53
 uses-permission#android.permission.BLUETOOTH
-ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:19:5-68
+ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:19:5-68
 	android:name
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:19:22-65
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:19:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:20:5-74
+ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:20:5-74
 	android:name
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:20:22-71
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:20:22-71
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:21:5-81
+ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:21:5-81
 	android:name
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:21:22-78
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:21:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:22:5-79
+ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:22:22-76
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:22:22-76
 application
-ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:24:5-42:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\80681a4ac54ba5df8dc32eae4208bb09\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\80681a4ac54ba5df8dc32eae4208bb09\AndroidManifest.xml:9:5-20
+ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:24:5-45:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\ab6c4139f4c930057d459484040fe7b1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\ab6c4139f4c930057d459484040fe7b1\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:26:9-41
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:26:9-41
 	android:icon
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:25:9-43
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:25:9-43
 	android:theme
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:27:9-56
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:27:9-56
 activity#com.example.android.headsetBLE.DeviceScanActivity
-ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:28:9-35:20
+ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:28:9-36:20
+	android:screenOrientation
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:31:13-49
 	android:label
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:30:13-45
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:30:13-45
 	android:name
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:29:13-47
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:29:13-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:31:13-34:29
+ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:32:13-35:29
 action#android.intent.action.MAIN
-ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:32:17-69
+ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:33:17-77
+ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:33:27-74
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:34:27-74
 activity#com.example.android.headsetBLE.DeviceControlActivity
-ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:36:9-59
+ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:37:9-38:51
+	android:screenOrientation
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:38:13-49
 	android:name
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:36:19-56
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:37:19-56
 activity#com.example.android.headsetBLE.Data
-ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:37:9-41
+ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:39:9-40:51
+	android:screenOrientation
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:40:13-49
 	android:name
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:37:19-39
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:39:19-39
 service#com.example.android.headsetBLE.BluetoothLeService
-ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:39:9-41:38
+ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:42:9-44:38
 	android:enabled
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:41:13-35
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:44:13-35
 	android:name
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml:40:13-47
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml:43:13-47
 uses-sdk
-INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
-INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
-MERGED from [com.android.support:support-v13:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\18ed85889912b617224cbcca77c41f36\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v13:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\18ed85889912b617224cbcca77c41f36\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\49f8f8c5874997e72a8c13abce146b0d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\49f8f8c5874997e72a8c13abce146b0d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\963d874f50242dab8f4c5e15c8ab985d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\963d874f50242dab8f4c5e15c8ab985d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\81131911294f738af9e3f794d3f8375d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\81131911294f738af9e3f794d3f8375d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\80681a4ac54ba5df8dc32eae4208bb09\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\80681a4ac54ba5df8dc32eae4208bb09\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\9981244bad3c60d7c03f0f693900e221\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\9981244bad3c60d7c03f0f693900e221\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\cb5e331cbd152ca0a908875a5976f70b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\cb5e331cbd152ca0a908875a5976f70b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\c38a4fa0a22bd06688df453ef447b48a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\c38a4fa0a22bd06688df453ef447b48a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\9f777e6627d0c77d6f0ca535a8a4dd5d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\9f777e6627d0c77d6f0ca535a8a4dd5d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\edea0f08ccfc96dd4cc6eb482e6c011c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\edea0f08ccfc96dd4cc6eb482e6c011c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\350307623fd1e90e35604fc2299d9e6c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\350307623fd1e90e35604fc2299d9e6c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\3c05595a4d841e8755054fd17d7370ae\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\3c05595a4d841e8755054fd17d7370ae\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\ef92a5a4a56b9a6875765e91e5909bfb\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\gaspa\.gradle\caches\transforms-2\files-2.1\ef92a5a4a56b9a6875765e91e5909bfb\AndroidManifest.xml:20:5-22:41
-INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
-INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+MERGED from [com.android.support:support-v13:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\b281a9df82a056fb0ede1d1d88d89e86\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\b281a9df82a056fb0ede1d1d88d89e86\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\eaae3b923c3377c7bc6505b8d080c0d5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\eaae3b923c3377c7bc6505b8d080c0d5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\daa836532e326901ed7b7e5fd2bc910b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\daa836532e326901ed7b7e5fd2bc910b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\c01c1429618c182582aba4d2f4546028\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\c01c1429618c182582aba4d2f4546028\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\ab6c4139f4c930057d459484040fe7b1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\ab6c4139f4c930057d459484040fe7b1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\dcfcc542c4b73bfbf50e345412fad0a8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\dcfcc542c4b73bfbf50e345412fad0a8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\9537e904e841c334943c2a48137a7ca1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\9537e904e841c334943c2a48137a7ca1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\f69264a07088ef1deab01b5dcb408d3b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\f69264a07088ef1deab01b5dcb408d3b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\b1a5b82dc9fff46cb608e437575e1a7a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\b1a5b82dc9fff46cb608e437575e1a7a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\e10586a01fd0103492459613defabd6b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\e10586a01fd0103492459613defabd6b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\73470ea4061aa2939a1d443dfe42a023\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\73470ea4061aa2939a1d443dfe42a023\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\6cfc2473b2437261b13fd1491458e33c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\6cfc2473b2437261b13fd1491458e33c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\187b3acb856e7ce18775a18b6a43c61e\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\kelia\.gradle\caches\transforms-2\files-2.1\187b3acb856e7ce18775a18b6a43c61e\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
-		INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
-		ADDED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
-		INJECTED from D:\DOCU\GitHub\BrainStorm_Project\App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kelia\Desktop\THE_App\Application\src\main\AndroidManifest.xml

@@ -653,10 +653,12 @@ id CTRL
 id DataBase_show
 id FUNCTION
 id META
+id ReturnButton
 id SHIFT
 id SYM
 id SeekBarL
 id SeekBarR
+id ZenButton
 id action0
 id action_bar
 id action_bar_activity_content
@@ -700,7 +702,6 @@ id contentPanel
 id custom
 id customPanel
 id dataBase_value
-id data_value
 id decor_content_parent
 id default_activity_button
 id device_address
