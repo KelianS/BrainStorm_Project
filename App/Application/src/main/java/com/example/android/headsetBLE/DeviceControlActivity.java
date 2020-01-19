@@ -96,6 +96,7 @@ public class DeviceControlActivity extends Activity {
 
     private BluetoothGattCharacteristic mNotifyCharacteristic;
     public BluetoothGattCharacteristic bluetoothGattCharacteristicHM_10;
+    public BluetoothGattCharacteristic bluetoothGattCharacteristicREAD;
 
     // variable for headset
     private TgStreamReader tgStreamReader;
@@ -218,11 +219,44 @@ public class DeviceControlActivity extends Activity {
 
             /***************** Listener Received Data from the Car here ******************/
             } else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
+                mBluetoothLeService.readCharacteristic(bluetoothGattCharacteristicHM_10);
+                byte[] byReceived = bluetoothGattCharacteristicHM_10.getValue();
+                String sReceived = new String(byReceived);
+                //if(sReceived!="Y") {
+                    Log.i("R_DATA", sReceived);
+              //  }
+                //If we receive a data (any data) we reply for the alive bit
                 if(bluetoothGattCharacteristicHM_10 != null){
                     bluetoothGattCharacteristicHM_10.setValue("Z ");
                     mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
-                    mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10,true);
+                    mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10,false);
                 }
+
+                boolean bSensorLeft =false;
+                boolean bSensorMid =false;
+                boolean bSensorRight =false;
+
+
+                if(sReceived.charAt(0)=='F'){//=Received sensor info
+                    Log.i("R_DATA","F");
+                    if(sReceived.charAt(1)=='1'){
+                        bSensorLeft = true;
+                        Log.i("R_DATA","LEFT");
+                    }
+                    if(sReceived.charAt(2)=='1'){
+                        bSensorMid = true;
+                        Log.i("R_DATA","MID");
+                    }
+                    if(sReceived.charAt(3)=='1'){
+                        bSensorRight = true;
+                        Log.i("R_DATA","RIGHT");
+                    }
+
+                }
+
+
+
+
             }
             /*****************************************************************************/
 
@@ -557,6 +591,7 @@ public class DeviceControlActivity extends Activity {
 
         //start the Thread.
         new Thread(new BluetoothSending()).start();
+
     }
 
     //fonction to stop
@@ -568,7 +603,7 @@ public class DeviceControlActivity extends Activity {
         while(bluetoothGattCharacteristicHM_10 == null) {};
         bluetoothGattCharacteristicHM_10.setValue("A000000 ");
         mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
-        mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, true);
+        mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, false);
     }
 
 
@@ -686,9 +721,10 @@ public class DeviceControlActivity extends Activity {
                 DateFormat df = new SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z");
                 String date = df.format(Calendar.getInstance().getTime());
                 if (bluetoothGattCharacteristicHM_10 != null) {
-                    if (((iOldvalueR != iValueR) || (iOldvalueL != iValueL)) && bConnected) {
+                    if (((iOldvalueR != iValueR) || (iOldvalueL != iValueL)) && mConnected) {
                         String sVal = "R : " + Integer.toString(iValueR) + "  L : " + Integer.toString(iValueL) + "\n" + date + "\n\n";
                         m_DatabaseManager.insertScore(sVal);
+                        //Log.i("DB",sVal);
                         iOldvalueR = iValueR;
                         iOldvalueL = iValueL;
                     }
@@ -698,7 +734,7 @@ public class DeviceControlActivity extends Activity {
                         bluetoothGattCharacteristicHM_10.setValue(cMovementFinale + sBarR + sBarL + " ");
                     }
                     mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
-                    mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, true);
+                    mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, false);
                 }
             }
         }
