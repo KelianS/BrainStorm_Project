@@ -659,6 +659,7 @@ id SHIFT
 id SYM
 id SeekBarL
 id SeekBarR
+id SensorTitle
 id ZenButton
 id action0
 id action_bar
@@ -689,6 +690,9 @@ id attTitle
 id barrier
 id beginning
 id blinkImage
+id blinkLeft
+id blinkMid
+id blinkRight
 id blinkTitle
 id blocking
 id bottom

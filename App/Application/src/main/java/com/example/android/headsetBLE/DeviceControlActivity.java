@@ -116,8 +116,12 @@ public class DeviceControlActivity extends Activity {
     private boolean bZenModeActivate = false;
     private boolean bFocusActive =false; //for Focus mode
     private int iFocusActivate = 0;//for focus Mode
-
-
+    boolean bSensorLeft = false;
+    boolean bSensorMid = false;
+    boolean bSensorRight = false;
+    boolean bSensorLeftold = true;
+    boolean bSensorMidold = true;
+    boolean bSensorRightold = true;
 
     // canned data variables to compute blink
     short[] raw_data = {0};
@@ -141,6 +145,11 @@ public class DeviceControlActivity extends Activity {
     //UI components ZEN / ATTENTION MODE
     private Button bZenButton;
     private Button buFocus;
+
+    //UI components for sensor
+    private ImageView blinkLeft;
+    private ImageView blinkMid;
+    private ImageView blinkRight;
 
     //DataBase
     private DatabaseManager m_DatabaseManager;
@@ -234,9 +243,9 @@ public class DeviceControlActivity extends Activity {
                         mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
                     }
 
-                    boolean bSensorLeft = false;
-                    boolean bSensorMid = false;
-                    boolean bSensorRight = false;
+                    bSensorLeft = false;
+                    bSensorMid = false;
+                    bSensorRight = false;
 
 
                     if (sReceived.charAt(0) == 'F') {//=Received sensor info
@@ -298,6 +307,9 @@ public class DeviceControlActivity extends Activity {
         sqText = this.findViewById(R.id.sqText);
         bZenButton = findViewById(R.id.ZenButton);
         buFocus = findViewById(R.id.FocusButton);
+        blinkLeft = this.findViewById(R.id.blinkLeft);
+        blinkMid = this.findViewById(R.id.blinkMid);
+        blinkRight = this.findViewById(R.id.blinkRight);
 
         bZenButton.setBackgroundColor(0xBB808080);//Change the color of the background for the zen mode button
         bZenButton.setTextColor(Color.BLACK); //Change the color of the text for the zen mode button
@@ -522,11 +534,11 @@ public class DeviceControlActivity extends Activity {
                 });
 
                 int iAtt = value;
-                if(iAtt>=80 && iFocusActivate == 0 && bFocusActive == true){
+                if(iAtt>=70 && iFocusActivate == 0 && bFocusActive == true){
                     iFocusActivate = 1;
                     buFocus.setBackgroundColor(0xbb10ff10);//green
 
-                }else if(iAtt< 60 || bFocusActive == false){
+                }else if(iAtt< 40 || bFocusActive == false){
                     iFocusActivate = 0;
                     if(bFocusActive == true){
                         buFocus.setBackgroundColor(0xBBFFCC33);//yellow
@@ -549,11 +561,11 @@ public class DeviceControlActivity extends Activity {
                     }
                 });
                 int iMed = value;
-                if(iMed>=80 && iMedActivate == 0 && bZenModeActivate == true){
+                if(iMed>=70 && iMedActivate == 0 && bZenModeActivate == true){
                     iMedActivate = 1;
                     bZenButton.setBackgroundColor(0xbb10ff10);//green
 
-                }else if(iMed< 60 || bZenModeActivate == false){
+                }else if(iMed< 40 || bZenModeActivate == false){
                     iMedActivate = 0;
                     if(bZenModeActivate == true){
                         bZenButton.setBackgroundColor(0xBBFFCC33);//yellow
@@ -601,7 +613,7 @@ public class DeviceControlActivity extends Activity {
 
         //start the Thread.
         new Thread(new BluetoothSending()).start();
-
+        new Thread(new UpdateSensorUI()).start();
     }
 
     //fonction to stop
@@ -658,6 +670,37 @@ public class DeviceControlActivity extends Activity {
                 bZenButton.setBackgroundColor(0xBB808080);//default grey
             }
 
+    }
+    class UpdateSensorUI implements Runnable {
+        @Override
+        public void run() {
+            while (bstart) {
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                if(bSensorLeftold!=bSensorLeft) {
+                    bSensorLeftold = bSensorLeft;
+                    if (bSensorLeft) {
+                        blinkLeft.setImageResource(R.mipmap.led_on);
+                    } else blinkLeft.setImageResource(R.mipmap.led_off);
+                }
+                if(bSensorMidold!=bSensorMid) {
+                    bSensorMidold=bSensorMid;
+                    if (bSensorMid) {
+                        blinkMid.setImageResource(R.mipmap.led_on);
+                    } else blinkMid.setImageResource(R.mipmap.led_off);
+                }
+                if(bSensorRightold!=bSensorRight) {
+                    bSensorRightold=bSensorRight;
+                    if (bSensorRight) {
+                        blinkRight.setImageResource(R.mipmap.led_on);
+                    } else blinkRight.setImageResource(R.mipmap.led_off);
+                }
+
+            }
+        }
     }
 
 
@@ -793,7 +836,7 @@ public class DeviceControlActivity extends Activity {
             final boolean result = mBluetoothLeService.connect(mDeviceAddress);
             Log.d(TAG, "Connect request result=" + result);
         }
-        bstart = true; //set to true the running
+        Begin();
 
         Log.i("K : ", "Resume");
 
@@ -811,6 +854,7 @@ public class DeviceControlActivity extends Activity {
     @Override
     protected void onDestroy() {
         Log.i("K : ", "Destroy");
+        Stop();
         mBluetoothLeService.disconnect();
         super.onDestroy();
         unbindService(mServiceConnection);

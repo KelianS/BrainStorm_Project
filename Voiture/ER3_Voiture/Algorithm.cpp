@@ -75,7 +75,7 @@ void Algorithm::State_Update() {
 			Serial.println("disconnected");
 			digitalWrite(LED_TOP, 0);
 		}
-		else if (!bIR_Left && !bIR_Mid && !bIR_Right) { //If !E255255 = Not Auto anymore
+		else if (!bIR_Left && !bIR_Mid && !bIR_Right) {
 			State = RUNNING;
 		}
 		else if (bReceived) {
@@ -89,7 +89,7 @@ void Algorithm::State_Update() {
 			Serial.println("disconnected");
 			digitalWrite(LED_TOP, 0);
 		}
-		else if ((cParam != 'E') || (byValue1 != 255) || (byValue2 != 255)) {
+		else if (((cParam != 'E') || (byValue1 != 255) || (byValue2 != 255)) && (cParam!='Z')) {//If !E255255 = Not Auto anymore
 			State = RUNNING;
 		}
 		break;
@@ -202,37 +202,50 @@ void Algorithm::Async_Auto() {
 			case NO_SENS: //Forward
 				mMoteur.Right(FORWARD, 110);
 				mMoteur.Left(FORWARD, 110);
-				break;
+				Serial.println("NOSENS");
 
+				break;
 			case LEFT:
 				mMoteur.Right(REVERSE, 128);
 				mMoteur.Left(FORWARD, 50);
 				ulLastRefreshAuto = millis();//take time of the last hit
+				Serial.println("LEFT");
+
 				break;
 			case RIGHT:
 				mMoteur.Right(FORWARD, 50);
 				mMoteur.Left(REVERSE, 128);
 				ulLastRefreshAuto = millis();
+				Serial.println("RIGHT");
+
 				break;
 			case MID:
 				mMoteur.Right(REVERSE, 150);
 				mMoteur.Left(FORWARD, 80);
-				ulLastRefreshAuto = millis();
+				ulLastRefreshAuto = millis();			
+				Serial.println("MID");
+
 				break;
 			case TWOSENS_L :
 				mMoteur.Right(REVERSE, 150);
 				mMoteur.Left(FORWARD, 20);
 				ulLastRefreshAuto = millis();
+				Serial.println("BL");
+
 				break;
 			case TWOSENS_R:
 				mMoteur.Right(FORWARD, 20);
 				mMoteur.Left(REVERSE, 150);
 				ulLastRefreshAuto = millis();
+				Serial.println("BR");
+
 				break;
 			case THREESENS:
 				mMoteur.Right(REVERSE, 150);
 				mMoteur.Left(REVERSE, 20);
 				ulLastRefreshAuto = millis();
+				Serial.println("3R");
+
 				break;
 			}
 		}

@@ -1,4 +1,4 @@
-#Mon Jan 20 16:45:23 CET 2020
+#Mon Jan 20 18:47:35 CET 2020
 base.0=C\:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\BrainStorm_Project\\App\\Application\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
 path.1=classes.dex
 renamed.1=classes2.dex
