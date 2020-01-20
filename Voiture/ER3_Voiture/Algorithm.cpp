@@ -175,31 +175,24 @@ void Algorithm::Async_Auto() {
 		//Combinatory  / State_Auto update
 		if (bIR_Left && bIR_Mid && bIR_Right) {
 			StAuto = THREESENS;
-			mBluetooth.stBuffer = "F111000 ";
 		}
 		else if (bIR_Left && bIR_Mid) {
-			StAuto = TWOSENS_L;
-			mBluetooth.stBuffer = "F110000 ";
+			StAuto = TWOSENS_L;	
 		}
 		else if (bIR_Mid && bIR_Right) {
 			StAuto = TWOSENS_R;
-			mBluetooth.stBuffer = "F011000 ";
 		}
 		else if (bIR_Mid) {
 			StAuto = MID;
-			mBluetooth.stBuffer = "F010000 ";
 		}
 		else if (bIR_Left) {
 			StAuto = LEFT;
-			mBluetooth.stBuffer = "F100000 ";
 		}
 		else if (bIR_Right) {
 			StAuto = RIGHT;
-			mBluetooth.stBuffer = "F100000 ";
 		}
 		else if((ulLastRefreshAuto + 500) < millis()){
 			StAuto = NO_SENS;
-			mBluetooth.stBuffer = "";
 		}
 
 		//Outputs update
@@ -266,7 +259,7 @@ String Algorithm::SensorUpdate() {
 		stRet = "F100000 ";
 	}
 	else if (bIR_Right) {
-		stRet = "F100000 ";
+		stRet = "F001000 ";
 	}
 	return stRet;
 

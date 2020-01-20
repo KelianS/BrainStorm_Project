@@ -16,6 +16,7 @@
 
 package com.example.android.headsetBLE;
 import android.bluetooth.BluetoothClass;
+import android.bluetooth.BluetoothGattDescriptor;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Looper;
@@ -95,8 +96,7 @@ public class DeviceControlActivity extends Activity {
     private boolean mConnected = false;
 
     private BluetoothGattCharacteristic mNotifyCharacteristic;
-    public BluetoothGattCharacteristic bluetoothGattCharacteristicHM_10;
-    public BluetoothGattCharacteristic bluetoothGattCharacteristicREAD;
+    private BluetoothGattCharacteristic bluetoothGattCharacteristicHM_10;
 
     // variable for headset
     private TgStreamReader tgStreamReader;
@@ -112,9 +112,10 @@ public class DeviceControlActivity extends Activity {
     private boolean bstart = false; //BT Thread running
     private int iTest = 0;
     private boolean bConnected = false;
-    private int iOldAttValue = 0; //for Attention mode
     private int iMedActivate = 0;//for Zen Mode
     private boolean bZenModeActivate = false;
+    private boolean bFocusActive =false; //for Focus mode
+    private int iFocusActivate = 0;//for focus Mode
 
 
 
@@ -139,6 +140,7 @@ public class DeviceControlActivity extends Activity {
 
     //UI components ZEN / ATTENTION MODE
     private Button bZenButton;
+    private Button buFocus;
 
     //DataBase
     private DatabaseManager m_DatabaseManager;
@@ -218,51 +220,46 @@ public class DeviceControlActivity extends Activity {
                 }
 
             /***************** Listener Received Data from the Car here ******************/
+
             } else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
-                mBluetoothLeService.readCharacteristic(bluetoothGattCharacteristicHM_10);
-                byte[] byReceived = bluetoothGattCharacteristicHM_10.getValue();
-                String sReceived = new String(byReceived);
-                //if(sReceived!="Y") {
-                    Log.i("R_DATA", sReceived);
-              //  }
-                //If we receive a data (any data) we reply for the alive bit
-                if(bluetoothGattCharacteristicHM_10 != null){
-                    bluetoothGattCharacteristicHM_10.setValue("Z ");
-                    mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
-                    mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10,false);
+                String sReceived = intent.getStringExtra(BluetoothLeService.EXTRA_DATA);
+
+                if(sReceived != null) {
+                     //Log.i("R_DATA", sReceived);
+
+
+                    //If we receive a data (any data) we reply for the alive bit
+                    if (bluetoothGattCharacteristicHM_10 != null) {
+                        bluetoothGattCharacteristicHM_10.setValue("Z ");
+                        mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
+                    }
+
+                    boolean bSensorLeft = false;
+                    boolean bSensorMid = false;
+                    boolean bSensorRight = false;
+
+
+                    if (sReceived.charAt(0) == 'F') {//=Received sensor info
+                        if (sReceived.charAt(1) == '1') {
+                            bSensorLeft = true;
+                            Log.i("R_DATA", "LEFT");
+                        }
+                        if (sReceived.charAt(2) == '1') {
+                            bSensorMid = true;
+                            Log.i("R_DATA", "MID");
+                        }
+                        if (sReceived.charAt(3) == '1') {
+                            bSensorRight = true;
+                            Log.i("R_DATA", "RIGHT");
+                        }
+
+                    }
                 }
-
-                boolean bSensorLeft =false;
-                boolean bSensorMid =false;
-                boolean bSensorRight =false;
-
-
-                if(sReceived.charAt(0)=='F'){//=Received sensor info
-                    Log.i("R_DATA","F");
-                    if(sReceived.charAt(1)=='1'){
-                        bSensorLeft = true;
-                        Log.i("R_DATA","LEFT");
-                    }
-                    if(sReceived.charAt(2)=='1'){
-                        bSensorMid = true;
-                        Log.i("R_DATA","MID");
-                    }
-                    if(sReceived.charAt(3)=='1'){
-                        bSensorRight = true;
-                        Log.i("R_DATA","RIGHT");
-                    }
-
-                }
-
-
-
-
             }
             /*****************************************************************************/
 
         }
     };
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -300,9 +297,12 @@ public class DeviceControlActivity extends Activity {
         stateText = this.findViewById(R.id.stateText);
         sqText = this.findViewById(R.id.sqText);
         bZenButton = findViewById(R.id.ZenButton);
+        buFocus = findViewById(R.id.FocusButton);
 
         bZenButton.setBackgroundColor(0xBB808080);//Change the color of the background for the zen mode button
         bZenButton.setTextColor(Color.BLACK); //Change the color of the text for the zen mode button
+        buFocus.setBackgroundColor(0xBB808080);//Change the color of the background for the focus mode button
+        buFocus.setTextColor(Color.BLACK); //Change the color of the text for the focus mode button
 
         seekD.setMax(510);
         seekG.setMax(510);
@@ -512,7 +512,6 @@ public class DeviceControlActivity extends Activity {
 
                 Log.d(TAG, "NskAlgoAttAlgoIndexListener: Attention:" + value);
                 final String finalAttStr = "[" + value + "]";
-                iOldAttValue = value;
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -521,6 +520,18 @@ public class DeviceControlActivity extends Activity {
 
                     }
                 });
+
+                int iAtt = value;
+                if(iAtt>=80 && iFocusActivate == 0 && bFocusActive == true){
+                    iFocusActivate = 1;
+                    buFocus.setBackgroundColor(0xbb10ff10);//green
+
+                }else if(iAtt< 60 || bFocusActive == false){
+                    iFocusActivate = 0;
+                    if(bFocusActive == true){
+                        buFocus.setBackgroundColor(0xBBFFCC33);//yellow
+                    }
+                }
 
             }
         });
@@ -542,7 +553,7 @@ public class DeviceControlActivity extends Activity {
                     iMedActivate = 1;
                     bZenButton.setBackgroundColor(0xbb10ff10);//green
 
-                }else if(iMed< 50 || bZenModeActivate == false){
+                }else if(iMed< 60 || bZenModeActivate == false){
                     iMedActivate = 0;
                     if(bZenModeActivate == true){
                         bZenButton.setBackgroundColor(0xBBFFCC33);//yellow
@@ -561,7 +572,6 @@ public class DeviceControlActivity extends Activity {
                     // send 'a' to BLE
                     bluetoothGattCharacteristicHM_10.setValue("a\n");
                     mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
-                    mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10,true);
                 }*/
                 runOnUiThread(new Runnable() {
                     @Override
@@ -600,10 +610,10 @@ public class DeviceControlActivity extends Activity {
         bstart = false;
 
         /******** Send Command to stop motors before disconnect *******************/
-        while(bluetoothGattCharacteristicHM_10 == null) {};
-        bluetoothGattCharacteristicHM_10.setValue("A000000 ");
-        mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
-        mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, false);
+        if(bluetoothGattCharacteristicHM_10 != null) {
+            bluetoothGattCharacteristicHM_10.setValue("A000000 ");
+            mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
+        }
     }
 
 
@@ -614,6 +624,23 @@ public class DeviceControlActivity extends Activity {
         myIntentDataBase.putExtra(DeviceControlActivity.EXTRAS_DEVICE_ADDRESS, mDeviceAddress);
         startActivity(myIntentDataBase);
         Log.d("DATABASE","RUN");
+    }
+
+    public void onClickFocus(View view){
+
+        if (bFocusActive == false) {
+            if(bConnected == true) {
+                bFocusActive = true;
+                buFocus.setBackgroundColor(0xBBFFCC33);//yellow
+            }
+            else{
+                Toast.makeText(this,"Please connect the Brain wave before use Zen or Concentration mode",Toast.LENGTH_LONG).show();
+            }
+        }else{
+            bFocusActive = false;
+            buFocus.setBackgroundColor(0xBB808080);//default grey
+        }
+
     }
 
     public void OnClickZen(View view){
@@ -646,14 +673,29 @@ public class DeviceControlActivity extends Activity {
                 }
 
                 /*********** Get SeekBar Values ******/
-                iValueL = seekG.getProgress();
-                iValueR = seekD.getProgress();
+                iValueL = seekG.getProgress()-255;
+                iValueR = seekD.getProgress()-255;
+                if(iFocusActivate==0) {
 
+                    if (iValueL > 190) {
+                        iValueL = 190;
+                    }
+                    else if(iValueL<-190){
+                        iValueL = -190;
+                    }
+
+                    if(iValueR>190){
+                        iValueR = 190;
+                    }
+                    else if(iValueR<-190){
+                        iValueR=-190;
+                    }
+                }
+               // Log.i("R_DATA", Integer.toString(iValueR));
 
                 /******* SeekBar Right Algo : ********/
                 String sBarR;
                 char cMovementR;
-                iValueR = iValueR - 255;
                 if (iValueR < -10) {//Reverse
                     cMovementR = 'B';
                     if (-iValueR < 100) {
@@ -676,7 +718,6 @@ public class DeviceControlActivity extends Activity {
                 /******* SeekBar Left Algo : ********/
                 String sBarL;
                 char cMovementL;
-                iValueL = iValueL - 255;
                 if (iValueL < -10) {//Reverse
                     cMovementL = 'B';
                     if (-iValueL < 100) {
@@ -730,11 +771,12 @@ public class DeviceControlActivity extends Activity {
                     }
                     if(iMedActivate == 1) {
                         bluetoothGattCharacteristicHM_10.setValue("E255255 ");
-                    }else {
+                    }
+                    else{
                         bluetoothGattCharacteristicHM_10.setValue(cMovementFinale + sBarR + sBarL + " ");
                     }
                     mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
-                    mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, false);
+                   // mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, true);
                 }
             }
         }

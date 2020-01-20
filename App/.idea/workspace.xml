@@ -52,9 +52,101 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/12liRfJMtIfHj_80QjfdPtw8i7w=" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/12liRfJMtIfHj_80QjfdPtw8i7w=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/BluetoothLeService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/BluetoothLeService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/BluetoothLeService$LocalBinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/BluetoothLeService$LocalBinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/BluetoothLeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/BluetoothLeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$10$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$10$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$11$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$11$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$12$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$12$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$13$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$13$1$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$13$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$13$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$13$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$13$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$16$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$16$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$8$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$8$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$9$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$9$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$BluetoothSending.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity$BluetoothSending.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceControlActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceScanActivity$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceScanActivity$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceScanActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceScanActivity$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceScanActivity$LeDeviceListAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceScanActivity$LeDeviceListAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceScanActivity$ViewHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceScanActivity$ViewHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceScanActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/android/headsetBLE/DeviceScanActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/res/merged/debug/layout_gatt_services_characteristics.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/res/merged/debug/layout_gatt_services_characteristics.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/BluetoothLeService$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/BluetoothLeService$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/BluetoothLeService$LocalBinder.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/BluetoothLeService$LocalBinder.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/BluetoothLeService.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/BluetoothLeService.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$10$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$10$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$10.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$10.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$11$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$11$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$11.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$11.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$12$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$12$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$12.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$12.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$13$1$1$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$13$1$1$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$13$1$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$13$1$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$13$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$13$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$13.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$13.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$14.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$14.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$15.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$15.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$16$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$16$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$16.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$16.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$17.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$17.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$5.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$5.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$6.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$6.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$8$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$8$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$9$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$9$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$BluetoothSending.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity$BluetoothSending.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceControlActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceScanActivity$2$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceScanActivity$2$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceScanActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceScanActivity$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceScanActivity$LeDeviceListAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceScanActivity$LeDeviceListAdapter.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceScanActivity$ViewHolder.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceScanActivity$ViewHolder.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceScanActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/0/com/example/android/headsetBLE/DeviceScanActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/build/outputs/apk/debug/Application-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/Application/build/outputs/apk/debug/Application-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/BluetoothLeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/BluetoothLeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceControlActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceControlActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceScanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceScanActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/.vs/ER3_Voiture/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/.vs/ER3_Voiture/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/.vs/ER3_Voiture/v15/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/.vs/ER3_Voiture/v15/Browse.VC.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/.vs/ER3_Voiture/v15/ipch/AutoPCH/5e10c3b85650e9b3/BLUETOOTH.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/.vs/ER3_Voiture/v15/ipch/AutoPCH/5e10c3b85650e9b3/BLUETOOTH.ipch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/.vs/ER3_Voiture/v15/ipch/AutoPCH/97db19ddd978d4b2/ALGORITHM.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/.vs/ER3_Voiture/v15/ipch/AutoPCH/97db19ddd978d4b2/ALGORITHM.ipch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/.vs/ER3_Voiture/v15/ipch/AutoPCH/b88180f8a197fdeb/.ER3_VOITURE.VSARDUINO.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/.vs/ER3_Voiture/v15/ipch/AutoPCH/b88180f8a197fdeb/.ER3_VOITURE.VSARDUINO.ipch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Algorithm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Algorithm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Release/Algorithm.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Release/Algorithm.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Release/ER3_Voiture.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Release/ER3_Voiture.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Release/ER3_Voiture.elf" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Release/ER3_Voiture.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Release/ER3_Voiture.hex" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Release/ER3_Voiture.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Release/ER3_Voiture.ino.elf" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Release/ER3_Voiture.ino.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Release/ER3_Voiture.ino.hex" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Release/ER3_Voiture.ino.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Release/board.buildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/ER3_Voiture/Release/board.buildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/ER3_Voiture/__vm/Compile.vmps.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/ER3_Voiture/__vm/Compile.vmps.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/ER3_Voiture/__vm/Configuration.Release.vmps.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/ER3_Voiture/__vm/Configuration.Release.vmps.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Voiture/ER3_Voiture/__vm/Upload.vmps.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Voiture/ER3_Voiture/__vm/Upload.vmps.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,49 +175,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceControlActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="726" column="43" lean-forward="true" selection-start-line="726" selection-start-column="43" selection-end-line="726" selection-end-column="43" />
+            <state relative-caret-position="415">
+              <caret line="693" column="17" selection-start-line="693" selection-start-column="17" selection-end-line="693" selection-end-column="17" />
               <folding>
-                <element signature="e#6144#10402#0" expanded="true" />
-                <element signature="e#10401#10402#0" expanded="true" />
-                <element signature="e#12735#12736#0" expanded="true" />
-                <element signature="e#12789#12790#0" expanded="true" />
-                <element signature="e#13218#13219#0" expanded="true" />
-                <element signature="e#13276#13277#0" expanded="true" />
-                <element signature="e#14225#15136#0" expanded="true" />
-                <element signature="e#15135#15136#0" expanded="true" />
-                <element signature="e#15179#15470#0" expanded="true" />
-                <element signature="e#15469#15470#0" expanded="true" />
-                <element signature="e#15512#15670#0" expanded="true" />
-                <element signature="e#15669#15670#0" expanded="true" />
-                <element signature="e#15720#16328#0" expanded="true" />
-                <element signature="e#15989#16302#0" expanded="true" />
-                <element signature="e#16301#16302#0" expanded="true" />
-                <element signature="e#16327#16328#0" expanded="true" />
-                <element signature="e#16376#20312#0" expanded="true" />
-                <element signature="e#17380#20286#0" expanded="true" />
-                <element signature="e#20285#20286#0" expanded="true" />
-                <element signature="e#20311#20312#0" expanded="true" />
-                <element signature="e#20362#20936#0" expanded="true" />
-                <element signature="e#20552#20892#0" expanded="true" />
-                <element signature="e#20891#20892#0" expanded="true" />
-                <element signature="e#20935#20936#0" expanded="true" />
-                <element signature="e#20985#21571#0" expanded="true" />
-                <element signature="e#21311#21544#0" expanded="true" />
-                <element signature="e#21543#21544#0" expanded="true" />
-                <element signature="e#21570#21571#0" expanded="true" />
-                <element signature="e#21620#22657#0" expanded="true" />
-                <element signature="e#21908#22140#0" expanded="true" />
-                <element signature="e#22139#22140#0" expanded="true" />
-                <element signature="e#22656#22657#0" expanded="true" />
-                <element signature="e#22787#24206#0" expanded="true" />
-                <element signature="e#23438#24180#0" expanded="true" />
-                <element signature="e#23686#24133#0" expanded="true" />
-                <element signature="e#23798#24075#0" expanded="true" />
-                <element signature="e#24074#24075#0" expanded="true" />
-                <element signature="e#24132#24133#0" expanded="true" />
-                <element signature="e#24179#24180#0" expanded="true" />
-                <element signature="e#24205#24206#0" expanded="true" />
+                <element signature="e#6206#10350#0" expanded="true" />
+                <element signature="e#10349#10350#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,11 +188,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/BluetoothLeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2458">
-              <caret line="327" column="48" lean-forward="true" selection-start-line="327" selection-start-column="48" selection-end-line="327" selection-end-column="48" />
+            <state relative-caret-position="340">
+              <caret line="130" column="50" selection-start-line="130" selection-start-column="50" selection-end-line="130" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#6946#6947#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/Data.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DatabaseManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="45" column="47" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -147,7 +220,7 @@
         <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="3553">
+            <state relative-caret-position="3570">
               <caret line="210" column="8" selection-start-line="210" selection-start-column="8" selection-end-line="210" selection-end-column="8" />
             </state>
           </provider>
@@ -164,36 +237,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onRe</find>
-      <find>mDeviceName</find>
-      <find>onSaveInstanceState</find>
-      <find>savedInstanceState</find>
-      <find>onStop</find>
-      <find>Stop</find>
-      <find>Stop()</find>
-      <find>inte</find>
-      <find>intent</find>
-      <find>attention</find>
-      <find>iConnected</find>
-      <find>bZen</find>
-      <find>zen</find>
-      <find>bZenButton</find>
-      <find>bZenBu</find>
-      <find>iMedActivate</find>
-      <find>iMed</find>
-      <find>op</find>
-      <find>Log</find>
-      <find>TAG</find>
-      <find>Surface</find>
       <find>log</find>
       <find>Attempting to start service discovery</find>
       <find>discoverServices</find>
       <find>bluetoothGattCharacteristicHM_10</find>
-      <find>setCharacteristicNotification</find>
       <find>iValueR</find>
       <find>iOldvalueR</find>
       <find>mConnected</find>
       <find>bConnected</find>
+      <find>onRe</find>
+      <find>mGattCharacteristics</find>
+      <find>characteristic</find>
+      <find>EXTRA_DATA</find>
+      <find>sendBroadcast</find>
+      <find>readCharacteristic</find>
+      <find>write</find>
+      <find>Notifi</find>
+      <find>makeGattUpdateIntentFilter</find>
+      <find>disconn</find>
+      <find>onBackPressed</find>
+      <find>NskAlgoUninit()</find>
+      <find>NskAlgoUninit</find>
+      <find>mNotifyCharacteristic</find>
+      <find>CLIENT_CONFIGURATION_DESCRIPTOR_STRIN</find>
+      <find>z</find>
+      <find>setCharacteristicNotification</find>
+      <find>bZEn</find>
+      <find>iMedActivate</find>
+      <find>CLIENT_CONFIGURATION_DESCRIPTOR_STRING</find>
+      <find>insertScore</find>
+      <find>insertScore invoked</find>
     </findStrings>
     <replaceStrings>
       <replace>HM_10</replace>
@@ -219,24 +292,24 @@
         <option value="$PROJECT_DIR$/../Headset-Mindwave/android-BluetoothLeGatt-blended-V05/Application/src/main/java/com/example/android/headsetBLE/DeviceControlActivity.java" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/Bluetooth_Thread.java" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/BluetoothLeService.java" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/RobotData.java" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DatabaseManager.java" />
-        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceScanActivity.java" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/activity_data.xml" />
         <option value="$PROJECT_DIR$/Application/build.gradle" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/Data.java" />
         <option value="$PROJECT_DIR$/Application/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceScanActivity.java" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/BluetoothLeService.java" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceControlActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="401" />
-    <option name="y" value="-23" />
-    <option name="width" value="1408" />
-    <option name="height" value="1057" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1036" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -246,7 +319,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -349,6 +421,7 @@
         </subPane>
       </pane>
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,13 +436,14 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="device.picker.selection" value="3201cfd64521b4f3" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/oldTHE_App" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="PsdUISettings">
-    <option name="MODULE_TAB" value="Properties" />
+    <option name="MODULE_TAB" value="Signing Configs" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -591,7 +665,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Captures" order="5" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="6" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.12686567" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.2595949" />
       <window_info id="Resources Explorer" order="8" />
       <window_info id="DB Browser" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -601,10 +675,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32977587" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4977307" weight="0.18220793" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4977307" weight="0.27867097" />
       <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.9226891" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.09754797" side_tool="true" weight="0.6638207" />
-      <window_info anchor="bottom" id="Logcat" order="10" sideWeight="0.90245205" weight="0.32047158" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="10" sideWeight="0.90245205" visible="true" weight="0.3215434" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3290461" />
       <window_info anchor="bottom" id="DB Execution Console" order="13" />
@@ -619,42 +693,6 @@
       <window_info anchor="right" id="Preview" order="8" weight="0.32995737" />
       <window_info anchor="right" id="Assistant" order="9" weight="0.32980332" />
     </layout>
-    <layout-to-restore>
-      <window_info id="DB Browser" order="0" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Build Variants" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Captures" order="6" side_tool="true" weight="0.25" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="8" visible="true" weight="0.12686567" />
-      <window_info id="Resources Explorer" order="9" />
-      <window_info anchor="bottom" id="DB Execution Console" order="0" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.83812404" weight="0.3959445" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4044824" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32977587" />
-      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.4977307" visible="true" weight="0.18617614" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" weight="0.9226891" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50226927" side_tool="true" weight="0.19327731" />
-      <window_info anchor="bottom" id="Logcat" order="11" sideWeight="0.9039334" weight="0.94877267" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.3290461" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
-      <window_info anchor="right" id="Gradle" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Preview" order="8" />
-      <window_info anchor="right" id="Assistant" order="9" weight="0.32980332" />
-    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -730,7 +768,6 @@
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DatabaseManager.java" />
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/activity_data.xml" />
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/RobotData.java" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -806,24 +843,6 @@
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/app/Instrumentation.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/app/Activity.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/os/MessageQueue.java" />
-    <entry file="file://$PROJECT_DIR$/Application/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-          <folding>
-            <element signature="e#1285#1303#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/SampleGattAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -831,82 +850,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+          <folding>
+            <element signature="e#1118#1136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceScanActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="155" column="5" lean-forward="true" selection-start-line="155" selection-start-column="5" selection-end-line="155" selection-end-column="5" />
+        <state relative-caret-position="341">
+          <caret line="214" column="126" lean-forward="true" selection-start-line="214" selection-start-column="126" selection-end-line="214" selection-end-column="126" />
           <folding>
-            <element signature="e#0#11023#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#8317#8318#0" expanded="true" />
-            <element signature="e#8365#8366#0" expanded="true" />
+            <element signature="e#8166#8167#0" expanded="true" />
+            <element signature="e#8240#8241#0" expanded="true" />
+            <element signature="e#8339#8340#0" expanded="true" />
+            <element signature="e#8445#8446#0" expanded="true" />
+            <element signature="e#8535#8536#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/BluetoothLeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2458">
-          <caret line="327" column="48" lean-forward="true" selection-start-line="327" selection-start-column="48" selection-end-line="327" selection-end-column="48" />
+        <state relative-caret-position="340">
+          <caret line="130" column="50" selection-start-line="130" selection-start-column="50" selection-end-line="130" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#6946#6947#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="3553">
+        <state relative-caret-position="3570">
           <caret line="210" column="8" selection-start-line="210" selection-start-column="8" selection-end-line="210" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceControlActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="726" column="43" lean-forward="true" selection-start-line="726" selection-start-column="43" selection-end-line="726" selection-end-column="43" />
+        <state relative-caret-position="415">
+          <caret line="693" column="17" selection-start-line="693" selection-start-column="17" selection-end-line="693" selection-end-column="17" />
           <folding>
-            <element signature="e#6144#10402#0" expanded="true" />
-            <element signature="e#10401#10402#0" expanded="true" />
-            <element signature="e#12735#12736#0" expanded="true" />
-            <element signature="e#12789#12790#0" expanded="true" />
-            <element signature="e#13218#13219#0" expanded="true" />
-            <element signature="e#13276#13277#0" expanded="true" />
-            <element signature="e#14225#15136#0" expanded="true" />
-            <element signature="e#15135#15136#0" expanded="true" />
-            <element signature="e#15179#15470#0" expanded="true" />
-            <element signature="e#15469#15470#0" expanded="true" />
-            <element signature="e#15512#15670#0" expanded="true" />
-            <element signature="e#15669#15670#0" expanded="true" />
-            <element signature="e#15720#16328#0" expanded="true" />
-            <element signature="e#15989#16302#0" expanded="true" />
-            <element signature="e#16301#16302#0" expanded="true" />
-            <element signature="e#16327#16328#0" expanded="true" />
-            <element signature="e#16376#20312#0" expanded="true" />
-            <element signature="e#17380#20286#0" expanded="true" />
-            <element signature="e#20285#20286#0" expanded="true" />
-            <element signature="e#20311#20312#0" expanded="true" />
-            <element signature="e#20362#20936#0" expanded="true" />
-            <element signature="e#20552#20892#0" expanded="true" />
-            <element signature="e#20891#20892#0" expanded="true" />
-            <element signature="e#20935#20936#0" expanded="true" />
-            <element signature="e#20985#21571#0" expanded="true" />
-            <element signature="e#21311#21544#0" expanded="true" />
-            <element signature="e#21543#21544#0" expanded="true" />
-            <element signature="e#21570#21571#0" expanded="true" />
-            <element signature="e#21620#22657#0" expanded="true" />
-            <element signature="e#21908#22140#0" expanded="true" />
-            <element signature="e#22139#22140#0" expanded="true" />
-            <element signature="e#22656#22657#0" expanded="true" />
-            <element signature="e#22787#24206#0" expanded="true" />
-            <element signature="e#23438#24180#0" expanded="true" />
-            <element signature="e#23686#24133#0" expanded="true" />
-            <element signature="e#23798#24075#0" expanded="true" />
-            <element signature="e#24074#24075#0" expanded="true" />
-            <element signature="e#24132#24133#0" expanded="true" />
-            <element signature="e#24179#24180#0" expanded="true" />
-            <element signature="e#24205#24206#0" expanded="true" />
+            <element signature="e#6206#10350#0" expanded="true" />
+            <element signature="e#10349#10350#0" expanded="true" />
           </folding>
         </state>
       </provider>
