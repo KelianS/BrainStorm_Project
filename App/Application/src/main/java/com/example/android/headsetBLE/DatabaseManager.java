@@ -43,7 +43,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
         String strSql = "insert into T_SeekBar (value_) values ('"
                 + values + "'" + ")";
         this.getWritableDatabase().execSQL( strSql);
-        Log.i( "DATABASE", "insertScore invoked" );
+        Log.d( "DATABASE", "insertScore invoked" );
     }
     public List<RobotData> readTop100() {
         List<RobotData> action = new ArrayList<>();

@@ -3153,7 +3153,13 @@ public final class R {
     public static final int ic_launcher_foreground=0x7f0b0001;
     public static final int ic_launcher_round=0x7f0b0002;
     public static final int led_off=0x7f0b0003;
-    public static final int led_on=0x7f0b0004;
+    public static final int led_off1=0x7f0b0004;
+    public static final int led_off2=0x7f0b0005;
+    public static final int led_off3=0x7f0b0006;
+    public static final int led_on=0x7f0b0007;
+    public static final int led_on1=0x7f0b0008;
+    public static final int led_on2=0x7f0b0009;
+    public static final int led_on3=0x7f0b000a;
   }
   public static final class string {
     public static final int abc_action_bar_home_description=0x7f0c0000;

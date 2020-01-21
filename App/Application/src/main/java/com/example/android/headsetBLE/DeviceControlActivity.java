@@ -251,15 +251,15 @@ public class DeviceControlActivity extends Activity {
                     if (sReceived.charAt(0) == 'F') {//=Received sensor info
                         if (sReceived.charAt(1) == '1') {
                             bSensorLeft = true;
-                            Log.i("R_DATA", "LEFT");
+                           // Log.i("R_DATA", "LEFT");
                         }
                         if (sReceived.charAt(2) == '1') {
                             bSensorMid = true;
-                            Log.i("R_DATA", "MID");
+                           // Log.i("R_DATA", "MID");
                         }
                         if (sReceived.charAt(3) == '1') {
                             bSensorRight = true;
-                            Log.i("R_DATA", "RIGHT");
+                          //  Log.i("R_DATA", "RIGHT");
                         }
 
                     }
@@ -671,33 +671,78 @@ public class DeviceControlActivity extends Activity {
             }
 
     }
+
     class UpdateSensorUI implements Runnable {
         @Override
         public void run() {
             while (bstart) {
                 try {
-                    Thread.sleep(100);
+                    Thread.sleep(1!00);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                if(bSensorLeftold!=bSensorLeft) {
-                    bSensorLeftold = bSensorLeft;
-                    if (bSensorLeft) {
-                        blinkLeft.setImageResource(R.mipmap.led_on);
-                    } else blinkLeft.setImageResource(R.mipmap.led_off);
-                }
-                if(bSensorMidold!=bSensorMid) {
-                    bSensorMidold=bSensorMid;
-                    if (bSensorMid) {
-                        blinkMid.setImageResource(R.mipmap.led_on);
-                    } else blinkMid.setImageResource(R.mipmap.led_off);
-                }
-                if(bSensorRightold!=bSensorRight) {
-                    bSensorRightold=bSensorRight;
-                    if (bSensorRight) {
-                        blinkRight.setImageResource(R.mipmap.led_on);
-                    } else blinkRight.setImageResource(R.mipmap.led_off);
-                }
+
+                            if (bSensorLeftold != bSensorLeft) {
+                                bSensorLeftold = bSensorLeft;
+                                if (bSensorLeft) {
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            blinkLeft.setImageResource(R.mipmap.led_on1);
+                                        }
+                                    });
+                                } else {
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            blinkLeft.setImageResource(R.mipmap.led_off1);
+                                        }
+                                    });
+                                }
+
+
+                            }
+                            if (bSensorMidold != bSensorMid) {
+                                bSensorMidold = bSensorMid;
+                                if (bSensorMid) {
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            blinkMid.setImageResource(R.mipmap.led_on2);
+                                        }
+                                    });
+                                } else {
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            blinkMid.setImageResource(R.mipmap.led_off2);
+                                        }
+                                    });
+                                }
+
+                            }
+                            if (bSensorRightold != bSensorRight) {
+
+                                bSensorRightold = bSensorRight;
+                                if (bSensorRight) {
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            blinkRight.setImageResource(R.mipmap.led_on3);
+                                        }
+                                    });
+                                } else {
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            blinkRight.setImageResource(R.mipmap.led_off3);
+                                        }
+                                    });
+                                }
+
+                            }
+
+
 
             }
         }

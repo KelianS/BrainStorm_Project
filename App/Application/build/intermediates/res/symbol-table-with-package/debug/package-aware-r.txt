@@ -881,7 +881,13 @@ mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap led_off
+mipmap led_off1
+mipmap led_off2
+mipmap led_off3
 mipmap led_on
+mipmap led_on1
+mipmap led_on2
+mipmap led_on3
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
