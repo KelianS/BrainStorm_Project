@@ -15,6 +15,7 @@ import java.util.List;
 public class DatabaseManager extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "DataBase_Evenements";
     private static final int  DATABASE_VERSION = 1;
+    private int idLast;
 
     public DatabaseManager(Context context){
         super(context,DATABASE_NAME,null,DATABASE_VERSION);
@@ -24,7 +25,8 @@ public class DatabaseManager extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String strSql = "create table T_SeekBar ("
                 + "   idScore integer primary key autoincrement,"
-                + "   value_ integer not null"
+                + "   value_ text not null,"
+                + "   valuereverse text not null"
                 + ")";
         db.execSQL( strSql);
         Log.i( "DATABASE", "onCreate invoked");
@@ -38,12 +40,26 @@ public class DatabaseManager extends SQLiteOpenHelper {
         Log.i( "DATABASE", "onUpgrade invoked" );
     }
 
-    public void insertScore( String values){
+    public void insertScore( String values, String values2){
         values = values.replace( "'", "''");
-        String strSql = "insert into T_SeekBar (value_) values ('"
-                + values + "'" + ")";
+        String strSql = "insert into T_SeekBar (value_, valuereverse) values ('"
+                + values + "', '" + values2 + "'" + ")";
+       /* String strSql = "insert into T_Scores (name, score, when_) values ('"
+                + name + "', " + score + ", " + new Date().getTime() + ")";*/
         this.getWritableDatabase().execSQL( strSql);
-        Log.d( "DATABASE", "insertScore invoked" );
+        idLast++;
+        Log.i( "DATABASE", "insertScore invoked" );
+    }
+
+
+    String GetLastData(){
+        String strSql = "select * from T_SeekBar WHERE idScore == " +idLast;
+        Cursor cursor = this.getReadableDatabase().rawQuery(strSql,null);
+        cursor.moveToLast();
+        if(idLast > 1 ) {
+            idLast--;
+        }
+        return cursor.getString(2);
     }
     public List<RobotData> readTop100() {
         List<RobotData> action = new ArrayList<>();
