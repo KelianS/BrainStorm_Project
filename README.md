@@ -118,6 +118,7 @@ What things you need to install the software and how to run :
 *// le prof? - *Initial work* - 
 * **Gaspard Misery** - *Geii student* - [GitHub](https://github.com/GaspardCtrl)
 * **Kelian Sermet** - *Geii student* - [GitHub](https://github.com/KelianS)
+* **Benjamin Bouaziz** -Geii student* - [GitHub](https://github.com/BouazBenji)
 
 ## Acknowledgments
 
