@@ -6,7 +6,15 @@ School project : Control a car with a brain waves
 
 ## Specifications :
 
-//
+```
+  Base :
+    Control a bluetooth 4.0 robot with an android smartphone.
+    Create an app compatible to link and control the robot from our smartphone.
+    Connect a 'MindWave Mobile 2 - NeuroSky' bluetooth 4.0 electroencephalogram to our app.
+    Control the robot with data from the electroencephalogram.
+    Add a database to memorise all actions
+    Bonus : Use database to make the robot come back to where it start.
+```
 
 ### Installing
 
@@ -75,7 +83,8 @@ What things you need to install the software and how to run :
       * FINAL FIX : Batabase
       * ADD : Music on focus
       * FIX : Crashes of sensor Thread
-    *CHANGES ROBOT :
+    * CHANGES ROBOT :
+      * FIX  : LOT OF PROBLEMS
       
 * 0.1.1
     * CHANGES APP:
@@ -85,8 +94,7 @@ What things you need to install the software and how to run :
       * FIX : Headset data treatment and functions.
       * ADD : Return to 0 functions
       * ADD : Receiving sensor data.
-    * CHANGES ROBOT : 
-        *
+
 * 0.1.0
     * The first proper release.
     * CHANGES APP :
@@ -117,7 +125,7 @@ What things you need to install the software and how to run :
 
 ## Authors
 
-* **Bernard Caron - Teacher** - *Initial Work* - 
+* **Bernard Caron - Teacher** - *Initial Work*  
 * **Gaspard Misery** - *Geii student* - [GitHub](https://github.com/GaspardCtrl)
 * **Kelian Sermet** - *Geii student* - [GitHub](https://github.com/KelianS)
 * **Benjamin Bouaziz** -Geii student* - [GitHub](https://github.com/BouazBenji)
