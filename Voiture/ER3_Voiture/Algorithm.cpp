@@ -25,9 +25,15 @@ void Algorithm::Input_Refresh() {
 	****************************************************************/
 	bReceived = mBluetooth.Receive(cParam, byValue1, byValue2);
 	bReply = mBluetooth.Alive();
+
+	bIR_Left = (mSensor.Read(IR_LEFT) < 50);
+	bIR_Mid =  (mSensor.Read(IR_MIDDLE) < 50);
+	bIR_Right =(mSensor.Read(IR_RIGHT) < 50);
+
+	/*
 	bIR_Left = (analogRead(IR_LEFT) < 50);
 	bIR_Mid = (analogRead(IR_MIDDLE) < 50);
-	bIR_Right = (analogRead(IR_RIGHT) < 50);
+	bIR_Right = (analogRead(IR_RIGHT) < 50);*/
 	mBluetooth.stBuffer = SensorUpdate();
 }
 
@@ -145,6 +151,8 @@ void Algorithm::Output_Update() {
 			//impossible to go Forward
 			switch (cParam) {
 			case 'A':  //Both Motors -> Forward
+				mMoteur.Right(FORWARD, 0);
+				mMoteur.Left(FORWARD, 0);
 				break;
 			case 'B':  //Both Motors -> Reverse
 				mMoteur.Right(REVERSE, byValue1);

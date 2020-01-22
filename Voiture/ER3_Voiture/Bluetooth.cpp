@@ -67,7 +67,7 @@ bool Bluetooth::Alive(void) {
 	//Send 'Y'
 	if ((millis()-ulTimeOld) > ANSWER_TIME) {
 		if (stBuffer!="") {//We have something to send (like the sensor info)
-			Serial.print(stBuffer);
+			//Serial.print(stBuffer);
 			Serial1.print(stBuffer);
 		}
 		else {//send alive bit if nothing else to send
