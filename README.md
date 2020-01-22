@@ -28,8 +28,8 @@ What things you need to install the software and how to run :
                      Try to reScan using the `Scan` button from trop right corner.
                      Make sure the robot is turned on.
                      
-  Step two : Wait a fiew time untill your device is properly connected to your phone. (it may take a minute)
-    If it does not : Try to restart using the button from trop right corner.
+  Step two : Wait a fiew time untill your device is properly connected to your phone. (pretty quick here)
+    If it does not : Try to restart using the button from top right corner.
     If it still does not : Retry from step One.
                      
   Step three : Turn on the bluetooth helmet and then hit `Headset` button
@@ -48,19 +48,21 @@ What things you need to install the software and how to run :
     State -> Connection status of the helmet.
     Blink -> Virtual led that indicate if you blink (in yellow).
     
-    Mod -> Indicate the mod you are running (...//...)
+    Mod -> Indicate the mod you're running on (Grey = desactivated / 
+                                               Yellow = Activated but not triggered /
+                                               Green = Triggered)
     
-    Attention -> A number between ///;;;/// that indicate your level of focus (with the helmet)
+      | Focus -> A number between [0;100] that indicate your focus level (with the helmet)
+                 When your focus > 80, it unlock a boost mod for the motors to go faster than the others, but you need to stay focus ;)
     
-    Meditation -> A number between ///;;;/// that indicate your level of ///...///unfocus (with the helmet)
-    
-    Buttons and actuator: 
-    
-      DataBase -> Show database in another activity. (Only clickable when is connected to a device)
+      | Meditation -> A number between [0;100] that indicate your meditation level (with the helmet)
+                When you're about to fall asleep(meditation >80), the robot take the control to drive itself and avoid a imminent collision
       
-      Focus -> ////...///
-      
-      Zen -> ///...///
+      | Reverse -> When triggered, the robot goes back from where it comes. To trigger it you need to do an eye blink.
+    
+    Buttons : 
+    
+      | DataBase -> Show database in another activity. (Only clickable when is connected to a device)
     
 ```
 
@@ -115,7 +117,7 @@ What things you need to install the software and how to run :
 
 ## Authors
 
-*// le prof? - *Initial work* - 
+* **Bernard Caron - Teacher ** - *Initial Work* - 
 * **Gaspard Misery** - *Geii student* - [GitHub](https://github.com/GaspardCtrl)
 * **Kelian Sermet** - *Geii student* - [GitHub](https://github.com/KelianS)
 * **Benjamin Bouaziz** -Geii student* - [GitHub](https://github.com/BouazBenji)
