@@ -103,7 +103,7 @@ What things you need to install the software and how to run :
       * ADD : SickBar and correspunding.
       * ADD : Bluetooth sending data methodes.
     * CHANGES ROBOT : 
-      *//Je sais pas
+      * ADD : First push full of digitalWrite/AnalogWrite, no security = to debug app
 * 0.0.1
     * First push of base code.
 
