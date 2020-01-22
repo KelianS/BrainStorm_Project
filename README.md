@@ -117,7 +117,7 @@ What things you need to install the software and how to run :
 
 ## Authors
 
-* **Bernard Caron - Teacher ** - *Initial Work* - 
+* **Bernard Caron - Teacher** - *Initial Work* - 
 * **Gaspard Misery** - *Geii student* - [GitHub](https://github.com/GaspardCtrl)
 * **Kelian Sermet** - *Geii student* - [GitHub](https://github.com/KelianS)
 * **Benjamin Bouaziz** -Geii student* - [GitHub](https://github.com/BouazBenji)
