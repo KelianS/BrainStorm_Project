@@ -365,6 +365,17 @@
             android:text="Mod :"
             android:textSize="18sp" />
 
+        <Button
+            android:id="@+id/reverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DataBase_show"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="OnClickReverse"
+            android:text="Reverse" />
+
 
     </RelativeLayout>
 </LinearLayout>

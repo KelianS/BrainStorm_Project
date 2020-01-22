@@ -107,8 +107,6 @@ public class DeviceControlActivity extends Activity {
     private boolean bRunning = false;
     private int iValueL;//Seekbar values
     private int iValueR;
-    private int iOldvalueR = 0;//seekbar for database
-    private int iOldvalueL = 0;
     private boolean bstart = false; //BT Thread running
     private int iTest = 0;
     private boolean bConnected = false;
@@ -154,7 +152,7 @@ public class DeviceControlActivity extends Activity {
     //DataBase
     private DatabaseManager m_DatabaseManager;
 
-
+    private boolean bReverse = false;
 
     // Code to manage Service lifecycle.
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
@@ -671,13 +669,13 @@ public class DeviceControlActivity extends Activity {
             }
 
     }
-
+     String sVal2;
     class UpdateSensorUI implements Runnable {
         @Override
         public void run() {
             while (bstart) {
                 try {
-                    Thread.sleep(1!00);
+                    Thread.sleep(100);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -845,19 +843,37 @@ public class DeviceControlActivity extends Activity {
                         break;
                 }
 
+                switch(cMovementFinale){
+                    case 'A':
+                    sVal2 = "B";
+                        break;
+                    case 'B':
+                        sVal2 = "A";
+                        break;
+                    case 'C':
+                        sVal2 = "D";
+                        break;
+                    case 'D':
+                        sVal2 = "C";
+                        break;
+                }
 
+                sVal2 = sVal2+sBarR+sBarL+ " ";
                 /****************** Bluetooth Sending + Updating DataBase while sending ******************/
                 DateFormat df = new SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z");
                 String date = df.format(Calendar.getInstance().getTime());
+                String sVal = "R : " + Integer.toString(iValueR) + "  L : " + Integer.toString(iValueL) + "\n" + date + "\n\n";
+
+                if(bReverse == false){
+                    m_DatabaseManager.insertScore(sVal, sVal2);
+                }
                 if (bluetoothGattCharacteristicHM_10 != null) {
-                    if (((iOldvalueR != iValueR) || (iOldvalueL != iValueL)) && mConnected) {
-                        String sVal = "R : " + Integer.toString(iValueR) + "  L : " + Integer.toString(iValueL) + "\n" + date + "\n\n";
-                        m_DatabaseManager.insertScore(sVal);
-                        //Log.i("DB",sVal);
-                        iOldvalueR = iValueR;
-                        iOldvalueL = iValueL;
+
+                    if(bReverse == true){
+                        sVal2 = m_DatabaseManager.GetLastData();
+                        bluetoothGattCharacteristicHM_10.setValue(sVal2);
                     }
-                    if(iMedActivate == 1) {
+                    else if(iMedActivate == 1) {
                         bluetoothGattCharacteristicHM_10.setValue("E255255 ");
                     }
                     else{
@@ -1185,6 +1201,14 @@ public class DeviceControlActivity extends Activity {
             }
 
         });
+    }
+
+    public void OnClickReverse(View view){
+        if(bReverse == false){
+            bReverse = true;
+        }else{
+            bReverse = false;
+        }
     }
 
 }
