@@ -17,7 +17,7 @@ Param definition :
 											'2' = IR_MID
 											'3' = IR_RIGHT
 					  - EX : 'F111000 ' := SENSOR LEFT/MID/RIGHT Activated
-'Y' => Alive bit sended from the car to know if the app is always connected. ex: 'Y ' (no data sent here)
+'Y' => Alive bit sended from the car to know if the app is always connected. ex: 'Y' (no data sent here)
 *****************************/
 
 #include <Arduino.h>

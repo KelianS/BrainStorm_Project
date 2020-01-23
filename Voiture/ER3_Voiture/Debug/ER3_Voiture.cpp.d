@@ -17,4 +17,5 @@ C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Debug\ER3_Voitur
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
  C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Debug\Moteur.h \
  C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Debug\Bluetooth.h \
- c:\program\ files\ (x86)\microsoft\ visual\ studio\2019\community\common7\ide\extensions\t4fb1en2.4xb\Micro\ Platforms\default\debuggers\VM_DBG/VM_DBG.h
+ C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Debug\Sensor.h \
+ c:\program\ files\ (x86)\microsoft\ visual\ studio\2017\community\common7\ide\extensions\cpwzuv43.p51\Micro\ Platforms\default\debuggers\VM_DBG/VM_DBG.h

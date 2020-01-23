@@ -15,4 +15,5 @@ C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Debug\Algorithm.
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\leonardo/pins_arduino.h \
  C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Debug\Algorithm.h \
  C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Debug\Moteur.h \
- C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Debug\Bluetooth.h
+ C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Debug\Bluetooth.h \
+ C:\Users\kelia\AppData\Local\Temp\VMBuilds\ER3_Voiture\leonardo\Debug\Sensor.h

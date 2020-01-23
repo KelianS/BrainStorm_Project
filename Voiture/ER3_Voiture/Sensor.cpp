@@ -33,8 +33,8 @@ Retourne  : uint8_t [0;255] => Valeur retour du CAN
 *************************/
 
 	int iNumRet;
-	/*
-	ADMUX = (B01000001); //ADLAR = 0 = right ajust | 4 derniers bits pour ADC0...8 (0000...1000)  (B0001*iADC)
+	
+	/*ADMUX = (B0100) + (B0001 * iADC); //ADLAR = 0 = right ajust | 4 derniers bits pour ADC0...8 (0000...1000)  (B0001*iADC)
 	ADCSRA = ADCSRA | (1 << 7); //Demarre CAN (ON/OFF)
 	ADCSRA = ADCSRA | (1 << 6); //Demarre la conversion
 
