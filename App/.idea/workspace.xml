@@ -906,7 +906,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="f415b89b" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -924,8 +924,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceControlActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="1021" column="73" lean-forward="true" selection-start-line="1021" selection-start-column="73" selection-end-line="1021" selection-end-column="73" />
+            <state relative-caret-position="88">
+              <caret line="718" column="45" selection-start-line="718" selection-start-column="45" selection-end-line="718" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -934,7 +934,7 @@
         <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="360">
               <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
             </state>
           </provider>
@@ -951,8 +951,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onRe</find>
-      <find>mGattCharacteristics</find>
       <find>characteristic</find>
       <find>EXTRA_DATA</find>
       <find>sendBroadcast</find>
@@ -981,10 +979,15 @@
       <find>iOld</find>
       <find>blink</find>
       <find>setBackgroundColor</find>
+      <find>begin</find>
+      <find>Tread100ms</find>
     </findStrings>
     <replaceStrings>
       <replace>HM_10</replace>
     </replaceStrings>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -1058,8 +1061,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -1139,6 +1140,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1156,7 +1159,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Signing Configs" />
@@ -1374,7 +1377,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="1" />
@@ -1383,7 +1386,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Captures" order="5" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="6" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.116204694" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.115733735" />
       <window_info id="Resources Explorer" order="8" />
       <window_info id="DB Browser" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1393,8 +1396,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4977307" visible="true" weight="0.113612" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.9226891" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.4977307" visible="true" weight="0.46890756" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" weight="0.9226891" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.09754797" side_tool="true" weight="0.6638207" />
       <window_info anchor="bottom" id="Logcat" order="10" sideWeight="0.90245205" weight="0.19185424" />
       <window_info anchor="bottom" id="Version Control" order="11" />
@@ -1565,18 +1568,18 @@
     <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-27/android.jar!/android/database/sqlite/SQLiteOpenHelper.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceControlActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="718" column="45" selection-start-line="718" selection-start-column="45" selection-end-line="718" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/headsetBLE/DeviceControlActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="1021" column="73" lean-forward="true" selection-start-line="1021" selection-start-column="73" selection-end-line="1021" selection-end-column="73" />
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>

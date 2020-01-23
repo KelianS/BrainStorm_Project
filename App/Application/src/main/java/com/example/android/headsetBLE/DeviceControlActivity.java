@@ -609,6 +609,14 @@ public class DeviceControlActivity extends Activity {
             }
         });
     }
+/*
+Function : Begin
+Utility : Start Tread100ms
+Made By : Kélian Sermet - Gaspard Misery
+			- Quentin Noé - Benjamain Bouaziz
+Input : Global boolean variable
+Output : none
+*/
 
     void Begin(){ //receive seekbar from main activity
 
@@ -619,7 +627,14 @@ public class DeviceControlActivity extends Activity {
         new Thread(new UpdateSensorUI()).start();
     }
 
-    //fonction to stop
+    /*
+Function : Stop
+Utility : Stop Tread100ms
+Made By : Kélian Sermet - Gaspard Misery
+			- Quentin Noé - Benjamain Bouaziz
+Input : Global boolean variable
+Output : none
+*/
     void Stop(){
         /*******Pause Thread to send**********/
         bstart = false;
@@ -631,6 +646,14 @@ public class DeviceControlActivity extends Activity {
         }
     }
 
+/*
+Function : OnClickDataBaseButton
+Utility : Start database activity (Only clickable when first data has been send)
+Made By : Kélian Sermet - Gaspard Misery
+			- Quentin Noé - Benjamain Bouaziz
+Input : none
+Output : none
+*/
 
     public void onClickDataBaseButton(View view){
         //mBluetoothLeService = null;
@@ -640,7 +663,14 @@ public class DeviceControlActivity extends Activity {
         startActivity(myIntentDataBase);
         Log.d("DATABASE","RUN");
     }
-
+    /*
+    Function : OnClickFocus
+    Utility : Start focus mode
+    Made By : Kélian Sermet - Gaspard Misery
+                - Quentin Noé - Benjamain Bouaziz
+    Input : Global boolean variable
+    Output : none
+    */
     public void onClickFocus(View view){
 
         if (bFocusActive == false) {
@@ -657,7 +687,14 @@ public class DeviceControlActivity extends Activity {
         }
 
     }
-
+    /*
+    Function : OnClickZen
+    Utility : Start zen mode
+    Made By : Kélian Sermet - Gaspard Misery
+                - Quentin Noé - Benjamain Bouaziz
+    Input : Global boolean variable
+    Output : none
+    */
     public void OnClickZen(View view){
 
             if (bZenModeActivate == false) {
@@ -675,6 +712,14 @@ public class DeviceControlActivity extends Activity {
 
     }
      String sVal2;
+    /*
+Thread  : UpdateSensorUI
+Utility : Change color of led corespunding to sensor
+Made By : Kélian Sermet - Gaspard Misery
+			- Quentin Noé - Benjamain Bouaziz
+Input : Sensor Value Global
+Output : none
+*/
     class UpdateSensorUI implements Runnable {
         @Override
         public void run() {
@@ -752,7 +797,15 @@ public class DeviceControlActivity extends Activity {
     }
 
 
-    /************************* Bluetooth Sending Thread : run every 50ms *************************/
+   /*
+Thread  : BluetoothSending
+Utility : Check seekBar value and send it to bluetooth (every 50ms)
+Made By : Kélian Sermet - Gaspard Misery
+			- Quentin Noé - Benjamain Bouaziz
+Input : Seekbar (from UI)
+Output : none
+*/
+
     class BluetoothSending implements Runnable {
         @Override
         public void run() {

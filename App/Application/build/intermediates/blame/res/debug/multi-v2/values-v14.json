@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\BrainStorm_Project\\App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+            "outputFile": "D:\\DOCU\\GitHub\\BrainStrom_Project\\App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kelia\\.gradle\\caches\\transforms-2\\files-2.1\\c01c1429618c182582aba4d2f4546028\\res\\values-v14\\values-v14.xml",
+                    "source": "C:\\Users\\gaspa\\.gradle\\caches\\transforms-2\\files-2.1\\81131911294f738af9e3f794d3f8375d\\res\\values-v14\\values-v14.xml",
                     "from": {
                         "startLines": "2,7,8,9,15",
                         "startColumns": "4,4,4,4,4",

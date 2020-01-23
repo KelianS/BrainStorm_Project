@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\BrainStorm_Project\\App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sr\\values-sr.xml",
+            "outputFile": "D:\\DOCU\\GitHub\\BrainStrom_Project\\App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sr\\values-sr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kelia\\.gradle\\caches\\transforms-2\\files-2.1\\c01c1429618c182582aba4d2f4546028\\res\\values-sr\\values-sr.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,317,423,509,613,731,812,892,980,1085,1193,1294,1398,1506,1607,1774,1871",
-                        "endColumns": "108,102,105,85,103,117,80,79,87,104,107,100,103,107,100,166,96,83",
-                        "endOffsets": "209,312,418,504,608,726,807,887,975,1080,1188,1289,1393,1501,1602,1769,1866,1950"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\kelia\\.gradle\\caches\\transforms-2\\files-2.1\\6cfc2473b2437261b13fd1491458e33c\\res\\values-sr\\values-sr.xml",
+                    "source": "C:\\Users\\gaspa\\.gradle\\caches\\transforms-2\\files-2.1\\3c05595a4d841e8755054fd17d7370ae\\res\\values-sr\\values-sr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -28,6 +18,16 @@
                         "startOffsets": "1955",
                         "endColumns": "100",
                         "endOffsets": "2051"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\gaspa\\.gradle\\caches\\transforms-2\\files-2.1\\81131911294f738af9e3f794d3f8375d\\res\\values-sr\\values-sr.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,214,317,423,509,613,731,812,892,980,1085,1193,1294,1398,1506,1607,1774,1871",
+                        "endColumns": "108,102,105,85,103,117,80,79,87,104,107,100,103,107,100,166,96,83",
+                        "endOffsets": "209,312,418,504,608,726,807,887,975,1080,1188,1289,1393,1501,1602,1769,1866,1950"
                     }
                 }
             ]
