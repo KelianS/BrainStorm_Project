@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\BrainStorm_Project-master\\App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-az\\values-az.xml",
+            "outputFile": "C:\\Users\\bin-b\\Desktop\\BrainStorm_Project-master\\App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-az\\values-az.xml",
             "map": [
                 {
                     "source": "C:\\Users\\bin-b\\.gradle\\caches\\transforms-2\\files-2.1\\b8fe9da592b7c9cc93ee5a7945e5203b\\res\\values-az\\values-az.xml",

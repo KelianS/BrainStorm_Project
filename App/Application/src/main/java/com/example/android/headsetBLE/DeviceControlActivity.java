@@ -143,6 +143,7 @@ public class DeviceControlActivity extends Activity {
     //UI components ZEN / ATTENTION MODE
     private Button bZenButton;
     private Button buFocus;
+    private Button buReverse;
 
     //UI components for sensor
     private ImageView blinkLeft;
@@ -291,6 +292,9 @@ public class DeviceControlActivity extends Activity {
         final Button m_DataBase_show = findViewById(R.id.DataBase_show);
         m_DataBase_show.setEnabled(false);
         m_DatabaseManager = new DatabaseManager(this);
+
+        //Reverse button Init
+        buReverse = findViewById(R.id.reverse);
 
         //Graphical object association
         headsetButton = this.findViewById(R.id.headsetButton);
@@ -583,12 +587,13 @@ public class DeviceControlActivity extends Activity {
                     bluetoothGattCharacteristicHM_10.setValue("a\n");
                     mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
                 }*/
+
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         blinkImage.setImageResource(R.mipmap.led_on);
                         Timer timer = new Timer();
-
+                        Blink();
                         timer.schedule(new TimerTask() {
                             public void run() {
                                 runOnUiThread(new Runnable() {
@@ -864,12 +869,12 @@ public class DeviceControlActivity extends Activity {
                 String date = df.format(Calendar.getInstance().getTime());
                 String sVal = "R : " + Integer.toString(iValueR) + "  L : " + Integer.toString(iValueL) + "\n" + date + "\n\n";
 
-                if(bReverse == false){
+                if(bReverseActivate == false){
                     m_DatabaseManager.insertScore(sVal, sVal2);
                 }
                 if (bluetoothGattCharacteristicHM_10 != null) {
 
-                    if(bReverse == true){
+                    if(bReverseActivate == true){
                         sVal2 = m_DatabaseManager.GetLastData();
                         bluetoothGattCharacteristicHM_10.setValue(sVal2);
                     }
@@ -1202,12 +1207,31 @@ public class DeviceControlActivity extends Activity {
 
         });
     }
-
+    boolean bReverseActivate ;
     public void OnClickReverse(View view){
+        buReverse.setBackgroundColor(0xBBFFCC33);
         if(bReverse == false){
             bReverse = true;
+
+
         }else{
             bReverse = false;
+            buReverse.setBackgroundColor(Color.GRAY);
+            bReverseActivate = false;
+        }
+    }
+    int iBlink = 0;
+    public void Blink(){
+        if((iBlink == 0) && (bReverse == true)){
+            iBlink = 1;
+            buReverse.setBackgroundColor(Color.GREEN);
+            bReverseActivate =true ;
+        }else if (iBlink == 1 && bReverse == false ){
+            iBlink = 0;
+            Toast.makeText(
+                    this,"You have do turn on the reverse mode."
+                    ,
+                    Toast.LENGTH_LONG).show();
         }
     }
 

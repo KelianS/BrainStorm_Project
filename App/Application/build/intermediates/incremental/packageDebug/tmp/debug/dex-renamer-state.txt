@@ -1,7 +1,7 @@
-#Wed Jan 22 08:54:06 CET 2020
-base.0=E\:\\BrainStorm_Project-master\\App\\Application\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+#Wed Jan 22 10:38:12 CET 2020
+base.0=C\:\\Users\\bin-b\\Desktop\\BrainStorm_Project-master\\App\\Application\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=E\:\\BrainStorm_Project-master\\App\\Application\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
+base.1=C\:\\Users\\bin-b\\Desktop\\BrainStorm_Project-master\\App\\Application\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out

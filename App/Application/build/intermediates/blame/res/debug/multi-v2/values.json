@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\BrainStorm_Project-master\\App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\bin-b\\Desktop\\BrainStorm_Project-master\\App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\bin-b\\.gradle\\caches\\transforms-2\\files-2.1\\06b3fb7e7f2c9d45b9e9b1a6a9f2a59b\\res\\values\\values.xml",
@@ -61,7 +61,7 @@
                     }
                 },
                 {
-                    "source": "E:\\BrainStorm_Project-master\\App\\Application\\src\\main\\res\\values\\base-strings.xml",
+                    "source": "C:\\Users\\bin-b\\Desktop\\BrainStorm_Project-master\\App\\Application\\src\\main\\res\\values\\base-strings.xml",
                     "from": {
                         "startLines": "18,19",
                         "startColumns": "4,4",
@@ -80,41 +80,7 @@
                     }
                 },
                 {
-                    "source": "E:\\BrainStorm_Project-master\\App\\Application\\src\\main\\res\\values\\ic_launcher_background.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "56",
-                        "endOffsets": "107"
-                    },
-                    "to": {
-                        "startLines": "167",
-                        "startColumns": "4",
-                        "startOffsets": "8652",
-                        "endColumns": "56",
-                        "endOffsets": "8704"
-                    }
-                },
-                {
-                    "source": "E:\\BrainStorm_Project-master\\App\\Application\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "15,28,29,31,32,22,21,16,17,23,20,25,19,24,18,26,42,43,44,45,33,34,35,27,30,38,37,39",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "685,1348,1396,1508,1591,1061,1014,752,797,1116,958,1214,909,1166,862,1260,2096,2145,2200,2243,1695,1766,1818,1304,1450,1937,1879,2011",
-                        "endColumns": "66,47,53,82,103,54,46,44,64,49,55,45,48,47,46,43,48,54,42,42,70,51,59,43,57,73,57,59",
-                        "endOffsets": "747,1391,1445,1586,1690,1111,1056,792,857,1161,1009,1255,953,1209,904,1299,2140,2195,2238,2281,1761,1813,1873,1343,1503,2006,1932,2066"
-                    },
-                    "to": {
-                        "startLines": "376,377,378,379,380,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,412,413,414,415",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "22413,22480,22528,22582,22665,23045,23100,23147,23192,23257,23307,23363,23409,23458,23506,23553,23597,23646,23701,23744,23787,23858,23910,23970,24138,24196,24270,24328",
-                        "endColumns": "66,47,53,82,103,54,46,44,64,49,55,45,48,47,46,43,48,54,42,42,70,51,59,43,57,73,57,59",
-                        "endOffsets": "22475,22523,22577,22660,22764,23095,23142,23187,23252,23302,23358,23404,23453,23501,23548,23592,23641,23696,23739,23782,23853,23905,23965,24009,24191,24265,24323,24383"
-                    }
-                },
-                {
-                    "source": "E:\\BrainStorm_Project-master\\App\\Application\\src\\main\\res\\values\\template-styles.xml",
+                    "source": "C:\\Users\\bin-b\\Desktop\\BrainStorm_Project-master\\App\\Application\\src\\main\\res\\values\\template-styles.xml",
                     "from": {
                         "startLines": "24,20,22,27,29,34",
                         "startColumns": "4,4,4,4,4,4",
@@ -152,20 +118,37 @@
                     }
                 },
                 {
-                    "source": "E:\\BrainStorm_Project-master\\App\\Application\\src\\main\\res\\values\\template-dimens.xml",
+                    "source": "C:\\Users\\bin-b\\Desktop\\BrainStorm_Project-master\\App\\Application\\src\\main\\res\\values\\ic_launcher_background.xml",
                     "from": {
-                        "startLines": "28,24,23,22,21,20,29",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "959,880,836,791,748,706,1029",
-                        "endColumns": "69,42,43,44,42,41,67",
-                        "endOffsets": "1024,918,875,831,786,743,1092"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
                     },
                     "to": {
-                        "startLines": "294,295,296,297,298,299,323",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "17359,17429,17472,17516,17561,17604,19077",
-                        "endColumns": "69,42,43,44,42,41,67",
-                        "endOffsets": "17424,17467,17511,17556,17599,17641,19140"
+                        "startLines": "167",
+                        "startColumns": "4",
+                        "startOffsets": "8652",
+                        "endColumns": "56",
+                        "endOffsets": "8704"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\bin-b\\Desktop\\BrainStorm_Project-master\\App\\Application\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "15,28,29,31,32,22,21,16,17,23,20,25,19,24,18,26,42,43,44,45,33,34,35,27,30,38,37,39",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "685,1348,1396,1508,1591,1061,1014,752,797,1116,958,1214,909,1166,862,1260,2096,2145,2200,2243,1695,1766,1818,1304,1450,1937,1879,2011",
+                        "endColumns": "66,47,53,82,103,54,46,44,64,49,55,45,48,47,46,43,48,54,42,42,70,51,59,43,57,73,57,59",
+                        "endOffsets": "747,1391,1445,1586,1690,1111,1056,792,857,1161,1009,1255,953,1209,904,1299,2140,2195,2238,2281,1761,1813,1873,1343,1503,2006,1932,2066"
+                    },
+                    "to": {
+                        "startLines": "376,377,378,379,380,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,412,413,414,415",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "22413,22480,22528,22582,22665,23045,23100,23147,23192,23257,23307,23363,23409,23458,23506,23553,23597,23646,23701,23744,23787,23858,23910,23970,24138,24196,24270,24328",
+                        "endColumns": "66,47,53,82,103,54,46,44,64,49,55,45,48,47,46,43,48,54,42,42,70,51,59,43,57,73,57,59",
+                        "endOffsets": "22475,22523,22577,22660,22764,23095,23142,23187,23252,23302,23358,23404,23453,23501,23548,23592,23641,23696,23739,23782,23853,23905,23965,24009,24191,24265,24323,24383"
                     }
                 },
                 {
@@ -183,6 +166,23 @@
                         "startOffsets": "9513,107966,108142,108264,108526,108721",
                         "endColumns": "88,65,121,60,65,66",
                         "endOffsets": "9597,108027,108259,108320,108587,108783"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\bin-b\\Desktop\\BrainStorm_Project-master\\App\\Application\\src\\main\\res\\values\\template-dimens.xml",
+                    "from": {
+                        "startLines": "28,24,23,22,21,20,29",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "959,880,836,791,748,706,1029",
+                        "endColumns": "69,42,43,44,42,41,67",
+                        "endOffsets": "1024,918,875,831,786,743,1092"
+                    },
+                    "to": {
+                        "startLines": "294,295,296,297,298,299,323",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "17359,17429,17472,17516,17561,17604,19077",
+                        "endColumns": "69,42,43,44,42,41,67",
+                        "endOffsets": "17424,17467,17511,17556,17599,17641,19140"
                     }
                 }
             ]
