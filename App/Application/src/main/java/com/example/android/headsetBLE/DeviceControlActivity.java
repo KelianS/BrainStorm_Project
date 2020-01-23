@@ -536,11 +536,11 @@ public class DeviceControlActivity extends Activity {
                 });
 
                 int iAtt = value;
-                if(iAtt>=70 && iFocusActivate == 0 && bFocusActive == true){
+                if(iAtt>=50 && iFocusActivate == 0 && bFocusActive == true){
                     iFocusActivate = 1;
                     buFocus.setBackgroundColor(0xbb10ff10);//green
 
-                }else if(iAtt< 40 || bFocusActive == false){
+                }else if(iAtt< 30 || bFocusActive == false){
                     iFocusActivate = 0;
                     if(bFocusActive == true){
                         buFocus.setBackgroundColor(0xBBFFCC33);//yellow
@@ -563,11 +563,11 @@ public class DeviceControlActivity extends Activity {
                     }
                 });
                 int iMed = value;
-                if(iMed>=70 && iMedActivate == 0 && bZenModeActivate == true){
+                if(iMed>=50 && iMedActivate == 0 && bZenModeActivate == true){
                     iMedActivate = 1;
                     bZenButton.setBackgroundColor(0xbb10ff10);//green
 
-                }else if(iMed< 40 || bZenModeActivate == false){
+                }else if(iMed< 30 || bZenModeActivate == false){
                     iMedActivate = 0;
                     if(bZenModeActivate == true){
                         bZenButton.setBackgroundColor(0xBBFFCC33);//yellow
@@ -945,9 +945,11 @@ public class DeviceControlActivity extends Activity {
         switch(item.getItemId()) {
             case R.id.menu_connect:
                 mBluetoothLeService.connect(mDeviceAddress);
+                Begin();
                 return true;
             case R.id.menu_disconnect:
                 mBluetoothLeService.disconnect();
+                Stop();
                 return true;
             case android.R.id.home:
                 onBackPressed();

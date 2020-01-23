@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\bin-b\\Desktop\\BrainStorm_Project-master\\App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\kelia\\Documents\\Ecole\\ER3\\Projet\\BrainStorm_Project\\App\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\bin-b\\.gradle\\caches\\transforms-2\\files-2.1\\fd0e60553940c20e5b69a537d42a6c3a\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\kelia\\.gradle\\caches\\transforms-2\\files-2.1\\daa836532e326901ed7b7e5fd2bc910b\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\bin-b\\.gradle\\caches\\transforms-2\\files-2.1\\e319c196a17d92dc9b2b85077f8dbe71\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\kelia\\.gradle\\caches\\transforms-2\\files-2.1\\c01c1429618c182582aba4d2f4546028\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
