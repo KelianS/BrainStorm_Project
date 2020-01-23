@@ -6,7 +6,15 @@ School project : Control a car with a brain waves
 
 ## Specifications :
 
-//
+```
+  Base :
+    Control a bluetooth 4.0 robot with an android smartphone.
+    Create an app compatible to link and control the robot from our smartphone.
+    Connect a 'MindWave Mobile 2 - NeuroSky' bluetooth 4.0 electroencephalogram to our app.
+    Control the robot with data from the electroencephalogram.
+    Add a database to memorise all actions
+    Bonus : Use database to make the robot come back to where it start.
+```
 
 ### Installing
 
@@ -28,8 +36,8 @@ What things you need to install the software and how to run :
                      Try to reScan using the `Scan` button from trop right corner.
                      Make sure the robot is turned on.
                      
-  Step two : Wait a fiew time untill your device is properly connected to your phone. (it may take a minute)
-    If it does not : Try to restart using the button from trop right corner.
+  Step two : Wait a fiew time untill your device is properly connected to your phone. (pretty quick here)
+    If it does not : Try to restart using the button from top right corner.
     If it still does not : Retry from step One.
                      
   Step three : Turn on the bluetooth helmet and then hit `Headset` button
@@ -48,19 +56,21 @@ What things you need to install the software and how to run :
     State -> Connection status of the helmet.
     Blink -> Virtual led that indicate if you blink (in yellow).
     
-    Mod -> Indicate the mod you are running (...//...)
+    Mod -> Indicate the mod you're running on (Grey = desactivated / 
+                                               Yellow = Activated but not triggered /
+                                               Green = Triggered)
     
-    Attention -> A number between ///;;;/// that indicate your level of focus (with the helmet)
+      | Focus -> A number between [0;100] that indicate your focus level (with the helmet)
+                 When your focus > 80, it unlock a boost mod for the motors to go faster than the others, but you need to stay focus ;)
     
-    Meditation -> A number between ///;;;/// that indicate your level of ///...///unfocus (with the helmet)
-    
-    Buttons and actuator: 
-    
-      DataBase -> Show database in another activity. (Only clickable when is connected to a device)
+      | Meditation -> A number between [0;100] that indicate your meditation level (with the helmet)
+                When you're about to fall asleep(meditation >80), the robot take the control to drive itself and avoid a imminent collision
       
-      Focus -> ////...///
-      
-      Zen -> ///...///
+      | Reverse -> When triggered, the robot goes back from where it comes. To trigger it you need to do an eye blink.
+    
+    Buttons : 
+    
+      | DataBase -> Show database in another activity. (Only clickable when is connected to a device)
     
 ```
 
@@ -73,7 +83,8 @@ What things you need to install the software and how to run :
       * FINAL FIX : Batabase
       * ADD : Music on focus
       * FIX : Crashes of sensor Thread
-    *CHANGES ROBOT :
+    * CHANGES ROBOT :
+      * FIX  : LOT OF PROBLEMS
       
 * 0.1.1
     * CHANGES APP:
@@ -83,8 +94,7 @@ What things you need to install the software and how to run :
       * FIX : Headset data treatment and functions.
       * ADD : Return to 0 functions
       * ADD : Receiving sensor data.
-    * CHANGES ROBOT : 
-        *
+
 * 0.1.0
     * The first proper release.
     * CHANGES APP :
@@ -101,7 +111,7 @@ What things you need to install the software and how to run :
       * ADD : SickBar and correspunding.
       * ADD : Bluetooth sending data methodes.
     * CHANGES ROBOT : 
-      *//Je sais pas
+      * ADD : First push full of digitalWrite/AnalogWrite, no security = to debug app
 * 0.0.1
     * First push of base code.
 
@@ -115,7 +125,7 @@ What things you need to install the software and how to run :
 
 ## Authors
 
-*// le prof? - *Initial work* - 
+* **Bernard Caron - Teacher** - *Initial Work*  
 * **Gaspard Misery** - *Geii student* - [GitHub](https://github.com/GaspardCtrl)
 * **Kelian Sermet** - *Geii student* - [GitHub](https://github.com/KelianS)
 * **Benjamin Bouaziz** -Geii student* - [GitHub](https://github.com/BouazBenji)
