@@ -4,6 +4,8 @@ School project : Control a car with a brain waves
 
 ![alt text](https://raw.githubusercontent.com/KelianS/BrainStrom_Project/master/Doc/77230064_437840437171191_7725214017249083392_n.png)
 
+Project finished on january 23,2020.
+
 ## Specifications :
 
 ```
