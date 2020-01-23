@@ -121,9 +121,13 @@ What things you need to install the software and how to run :
 ## Built With the uses of : 
 
    StackOverflow :
-   
-   ...
-
+   eg : https://stackoverflow.com/questions/3333658/how-to-make-a-vertical-seekbar-in-android
+        https://stackoverflow.com/questions/24844514/database-in-android-studio/24844741
+        https://stackoverflow.com/questions/2865315/threads-in-java
+        https://stackoverflow.com/questions/1921514/how-to-run-a-runnable-thread-in-android-at-defined-intervals
+        https://stackoverflow.com/questions/19205547/implementing-simple-seekbar-in-android
+        ...
+    Our teacher...
 
 ## Authors
 
@@ -134,8 +138,10 @@ What things you need to install the software and how to run :
 
 ## Acknowledgments
 
-* Learning
-* Inspiration
+* Learning java
+* Learning how to work in groups
+* Learning how to manage time
+* Learning uses of gant
 * etc
 
 
