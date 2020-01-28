@@ -135,7 +135,7 @@ What things you need to install the software and how to run :
 * **Gaspard Misery** - *Geii student* - [GitHub](https://github.com/GaspardCtrl)
 * **Kelian Sermet** - *Geii student* - [GitHub](https://github.com/KelianS)
 * **Benjamin Bouaziz** -Geii student* - [GitHub](https://github.com/BouazBenji)
-
+* **Noe Quentin** -*Geii student* - [GitHub]https://github.com/Quentin-art
 ## Acknowledgments
 
 * Learning java
